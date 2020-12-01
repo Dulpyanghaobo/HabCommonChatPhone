@@ -1,0 +1,847 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7597C5654DF9FFA6D0C1A0D4 /* Pods_CommonChatPhone_CommonChatPhoneUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F631D30BE26A46EA674ECE1C /* Pods_CommonChatPhone_CommonChatPhoneUITests.framework */; };
+		872A8C20F6102ADDE1622A89 /* Pods_CommonChatPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC6492803ABA754A61126FA1 /* Pods_CommonChatPhone.framework */; };
+		8E95CF7C127863349277F43B /* Pods_CommonChatPhoneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 575B0FF3484DDBD8EE7C1E21 /* Pods_CommonChatPhoneTests.framework */; };
+		DA7C04F0257678E8009BFFFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C04EF257678E8009BFFFC /* AppDelegate.swift */; };
+		DA7C04F2257678E8009BFFFC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C04F1257678E8009BFFFC /* SceneDelegate.swift */; };
+		DA7C04F4257678E8009BFFFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C04F3257678E8009BFFFC /* ViewController.swift */; };
+		DA7C04F7257678E8009BFFFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA7C04F5257678E8009BFFFC /* Main.storyboard */; };
+		DA7C04FA257678E8009BFFFC /* CommonChatPhone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA7C04F8257678E8009BFFFC /* CommonChatPhone.xcdatamodeld */; };
+		DA7C04FC257678E9009BFFFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA7C04FB257678E9009BFFFC /* Assets.xcassets */; };
+		DA7C04FF257678E9009BFFFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA7C04FD257678E9009BFFFC /* LaunchScreen.storyboard */; };
+		DA7C050A257678E9009BFFFC /* CommonChatPhoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C0509257678E9009BFFFC /* CommonChatPhoneTests.swift */; };
+		DA7C0515257678E9009BFFFC /* CommonChatPhoneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C0514257678E9009BFFFC /* CommonChatPhoneUITests.swift */; };
+		DA7C053525767CC6009BFFFC /* HABMeetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C053425767CC6009BFFFC /* HABMeetDetailViewController.swift */; };
+		DA7C053D25767D13009BFFFC /* HABMeetDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C053C25767D13009BFFFC /* HABMeetDetailView.swift */; };
+		DA7C056225769EBB009BFFFC /* HABMeetDetailHorizenSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C056125769EBB009BFFFC /* HABMeetDetailHorizenSliderView.swift */; };
+		DA7C05682576B583009BFFFC /* HabMeetDetailRowsHorizenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C05672576B583009BFFFC /* HabMeetDetailRowsHorizenCell.swift */; };
+		DA7C056D2576B7E4009BFFFC /* HabMeetDetailTimeItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C056C2576B7E4009BFFFC /* HabMeetDetailTimeItems.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA7C0506257678E9009BFFFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA7C04E4257678E8009BFFFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA7C04EB257678E8009BFFFC;
+			remoteInfo = CommonChatPhone;
+		};
+		DA7C0511257678E9009BFFFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA7C04E4257678E8009BFFFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA7C04EB257678E8009BFFFC;
+			remoteInfo = CommonChatPhone;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		575B0FF3484DDBD8EE7C1E21 /* Pods_CommonChatPhoneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonChatPhoneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ADD2F97EE0A32081E97257C /* Pods-CommonChatPhone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonChatPhone.debug.xcconfig"; path = "Target Support Files/Pods-CommonChatPhone/Pods-CommonChatPhone.debug.xcconfig"; sourceTree = "<group>"; };
+		AF8E40575C5F43D94570DDF6 /* Pods-CommonChatPhone-CommonChatPhoneUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonChatPhone-CommonChatPhoneUITests.release.xcconfig"; path = "Target Support Files/Pods-CommonChatPhone-CommonChatPhoneUITests/Pods-CommonChatPhone-CommonChatPhoneUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B4989EB374BB472C51205FC2 /* Pods-CommonChatPhoneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonChatPhoneTests.release.xcconfig"; path = "Target Support Files/Pods-CommonChatPhoneTests/Pods-CommonChatPhoneTests.release.xcconfig"; sourceTree = "<group>"; };
+		B6EF7AFFE8447DBB3E972C8C /* Pods-CommonChatPhone-CommonChatPhoneUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonChatPhone-CommonChatPhoneUITests.debug.xcconfig"; path = "Target Support Files/Pods-CommonChatPhone-CommonChatPhoneUITests/Pods-CommonChatPhone-CommonChatPhoneUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BC6492803ABA754A61126FA1 /* Pods_CommonChatPhone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonChatPhone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C167ACF5A8D2077FDE45113E /* Pods-CommonChatPhone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonChatPhone.release.xcconfig"; path = "Target Support Files/Pods-CommonChatPhone/Pods-CommonChatPhone.release.xcconfig"; sourceTree = "<group>"; };
+		DA7C04EC257678E8009BFFFC /* CommonChatPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommonChatPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA7C04EF257678E8009BFFFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DA7C04F1257678E8009BFFFC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DA7C04F3257678E8009BFFFC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DA7C04F6257678E8009BFFFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DA7C04F9257678E8009BFFFC /* CommonChatPhone.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CommonChatPhone.xcdatamodel; sourceTree = "<group>"; };
+		DA7C04FB257678E9009BFFFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA7C04FE257678E9009BFFFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DA7C0500257678E9009BFFFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA7C0505257678E9009BFFFC /* CommonChatPhoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommonChatPhoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA7C0509257678E9009BFFFC /* CommonChatPhoneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonChatPhoneTests.swift; sourceTree = "<group>"; };
+		DA7C050B257678E9009BFFFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA7C0510257678E9009BFFFC /* CommonChatPhoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommonChatPhoneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA7C0514257678E9009BFFFC /* CommonChatPhoneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonChatPhoneUITests.swift; sourceTree = "<group>"; };
+		DA7C0516257678E9009BFFFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA7C053425767CC6009BFFFC /* HABMeetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABMeetDetailViewController.swift; sourceTree = "<group>"; };
+		DA7C053C25767D13009BFFFC /* HABMeetDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABMeetDetailView.swift; sourceTree = "<group>"; };
+		DA7C056125769EBB009BFFFC /* HABMeetDetailHorizenSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABMeetDetailHorizenSliderView.swift; sourceTree = "<group>"; };
+		DA7C05672576B583009BFFFC /* HabMeetDetailRowsHorizenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabMeetDetailRowsHorizenCell.swift; sourceTree = "<group>"; };
+		DA7C056C2576B7E4009BFFFC /* HabMeetDetailTimeItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabMeetDetailTimeItems.swift; sourceTree = "<group>"; };
+		EA07F1301B2D8ADCEBB6780E /* Pods-CommonChatPhoneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonChatPhoneTests.debug.xcconfig"; path = "Target Support Files/Pods-CommonChatPhoneTests/Pods-CommonChatPhoneTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F631D30BE26A46EA674ECE1C /* Pods_CommonChatPhone_CommonChatPhoneUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonChatPhone_CommonChatPhoneUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA7C04E9257678E8009BFFFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				872A8C20F6102ADDE1622A89 /* Pods_CommonChatPhone.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA7C0502257678E9009BFFFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E95CF7C127863349277F43B /* Pods_CommonChatPhoneTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA7C050D257678E9009BFFFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7597C5654DF9FFA6D0C1A0D4 /* Pods_CommonChatPhone_CommonChatPhoneUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D9A60DFC33014A54C5FBC96 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC6492803ABA754A61126FA1 /* Pods_CommonChatPhone.framework */,
+				F631D30BE26A46EA674ECE1C /* Pods_CommonChatPhone_CommonChatPhoneUITests.framework */,
+				575B0FF3484DDBD8EE7C1E21 /* Pods_CommonChatPhoneTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		44302978D4CE871176A3165F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9ADD2F97EE0A32081E97257C /* Pods-CommonChatPhone.debug.xcconfig */,
+				C167ACF5A8D2077FDE45113E /* Pods-CommonChatPhone.release.xcconfig */,
+				B6EF7AFFE8447DBB3E972C8C /* Pods-CommonChatPhone-CommonChatPhoneUITests.debug.xcconfig */,
+				AF8E40575C5F43D94570DDF6 /* Pods-CommonChatPhone-CommonChatPhoneUITests.release.xcconfig */,
+				EA07F1301B2D8ADCEBB6780E /* Pods-CommonChatPhoneTests.debug.xcconfig */,
+				B4989EB374BB472C51205FC2 /* Pods-CommonChatPhoneTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DA7C04E3257678E8009BFFFC = {
+			isa = PBXGroup;
+			children = (
+				DA7C04EE257678E8009BFFFC /* CommonChatPhone */,
+				DA7C0508257678E9009BFFFC /* CommonChatPhoneTests */,
+				DA7C0513257678E9009BFFFC /* CommonChatPhoneUITests */,
+				DA7C04ED257678E8009BFFFC /* Products */,
+				44302978D4CE871176A3165F /* Pods */,
+				3D9A60DFC33014A54C5FBC96 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DA7C04ED257678E8009BFFFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA7C04EC257678E8009BFFFC /* CommonChatPhone.app */,
+				DA7C0505257678E9009BFFFC /* CommonChatPhoneTests.xctest */,
+				DA7C0510257678E9009BFFFC /* CommonChatPhoneUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA7C04EE257678E8009BFFFC /* CommonChatPhone */ = {
+			isa = PBXGroup;
+			children = (
+				DA7C052E25767C64009BFFFC /* MeetingDetail */,
+				DA7C04EF257678E8009BFFFC /* AppDelegate.swift */,
+				DA7C04F1257678E8009BFFFC /* SceneDelegate.swift */,
+				DA7C04F3257678E8009BFFFC /* ViewController.swift */,
+				DA7C04F5257678E8009BFFFC /* Main.storyboard */,
+				DA7C04FB257678E9009BFFFC /* Assets.xcassets */,
+				DA7C04FD257678E9009BFFFC /* LaunchScreen.storyboard */,
+				DA7C0500257678E9009BFFFC /* Info.plist */,
+				DA7C04F8257678E8009BFFFC /* CommonChatPhone.xcdatamodeld */,
+			);
+			path = CommonChatPhone;
+			sourceTree = "<group>";
+		};
+		DA7C0508257678E9009BFFFC /* CommonChatPhoneTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA7C0509257678E9009BFFFC /* CommonChatPhoneTests.swift */,
+				DA7C050B257678E9009BFFFC /* Info.plist */,
+			);
+			path = CommonChatPhoneTests;
+			sourceTree = "<group>";
+		};
+		DA7C0513257678E9009BFFFC /* CommonChatPhoneUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DA7C0514257678E9009BFFFC /* CommonChatPhoneUITests.swift */,
+				DA7C0516257678E9009BFFFC /* Info.plist */,
+			);
+			path = CommonChatPhoneUITests;
+			sourceTree = "<group>";
+		};
+		DA7C052E25767C64009BFFFC /* MeetingDetail */ = {
+			isa = PBXGroup;
+			children = (
+				DA7C053325767C82009BFFFC /* Models */,
+				DA7C053225767C7D009BFFFC /* Delegate */,
+				DA7C053125767C79009BFFFC /* Views */,
+				DA7C053025767C73009BFFFC /* ViewModels */,
+				DA7C052F25767C6C009BFFFC /* ViewControllers */,
+			);
+			path = MeetingDetail;
+			sourceTree = "<group>";
+		};
+		DA7C052F25767C6C009BFFFC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DA7C053425767CC6009BFFFC /* HABMeetDetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DA7C053025767C73009BFFFC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DA7C053125767C79009BFFFC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DA7C05662576B55B009BFFFC /* SubViews */,
+				DA7C053C25767D13009BFFFC /* HABMeetDetailView.swift */,
+				DA7C056125769EBB009BFFFC /* HABMeetDetailHorizenSliderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DA7C053225767C7D009BFFFC /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		DA7C053325767C82009BFFFC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DA7C05662576B55B009BFFFC /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				DA7C056C2576B7E4009BFFFC /* HabMeetDetailTimeItems.swift */,
+				DA7C05672576B583009BFFFC /* HabMeetDetailRowsHorizenCell.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA7C04EB257678E8009BFFFC /* CommonChatPhone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA7C0519257678E9009BFFFC /* Build configuration list for PBXNativeTarget "CommonChatPhone" */;
+			buildPhases = (
+				E8C1CB2006D7B7261114C920 /* [CP] Check Pods Manifest.lock */,
+				DA7C04E8257678E8009BFFFC /* Sources */,
+				DA7C04E9257678E8009BFFFC /* Frameworks */,
+				DA7C04EA257678E8009BFFFC /* Resources */,
+				68B76933495FB32F611A965E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CommonChatPhone;
+			productName = CommonChatPhone;
+			productReference = DA7C04EC257678E8009BFFFC /* CommonChatPhone.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DA7C0504257678E9009BFFFC /* CommonChatPhoneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA7C051C257678E9009BFFFC /* Build configuration list for PBXNativeTarget "CommonChatPhoneTests" */;
+			buildPhases = (
+				513BB9A36C522A0894B084ED /* [CP] Check Pods Manifest.lock */,
+				DA7C0501257678E9009BFFFC /* Sources */,
+				DA7C0502257678E9009BFFFC /* Frameworks */,
+				DA7C0503257678E9009BFFFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA7C0507257678E9009BFFFC /* PBXTargetDependency */,
+			);
+			name = CommonChatPhoneTests;
+			productName = CommonChatPhoneTests;
+			productReference = DA7C0505257678E9009BFFFC /* CommonChatPhoneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DA7C050F257678E9009BFFFC /* CommonChatPhoneUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA7C051F257678E9009BFFFC /* Build configuration list for PBXNativeTarget "CommonChatPhoneUITests" */;
+			buildPhases = (
+				8C695C072DC7FE6359740201 /* [CP] Check Pods Manifest.lock */,
+				DA7C050C257678E9009BFFFC /* Sources */,
+				DA7C050D257678E9009BFFFC /* Frameworks */,
+				DA7C050E257678E9009BFFFC /* Resources */,
+				72FFD64E9737466FA1351E55 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA7C0512257678E9009BFFFC /* PBXTargetDependency */,
+			);
+			name = CommonChatPhoneUITests;
+			productName = CommonChatPhoneUITests;
+			productReference = DA7C0510257678E9009BFFFC /* CommonChatPhoneUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA7C04E4257678E8009BFFFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					DA7C04EB257678E8009BFFFC = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					DA7C0504257678E9009BFFFC = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = DA7C04EB257678E8009BFFFC;
+					};
+					DA7C050F257678E9009BFFFC = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = DA7C04EB257678E8009BFFFC;
+					};
+				};
+			};
+			buildConfigurationList = DA7C04E7257678E8009BFFFC /* Build configuration list for PBXProject "CommonChatPhone" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA7C04E3257678E8009BFFFC;
+			productRefGroup = DA7C04ED257678E8009BFFFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA7C04EB257678E8009BFFFC /* CommonChatPhone */,
+				DA7C0504257678E9009BFFFC /* CommonChatPhoneTests */,
+				DA7C050F257678E9009BFFFC /* CommonChatPhoneUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA7C04EA257678E8009BFFFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA7C04FF257678E9009BFFFC /* LaunchScreen.storyboard in Resources */,
+				DA7C04FC257678E9009BFFFC /* Assets.xcassets in Resources */,
+				DA7C04F7257678E8009BFFFC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA7C0503257678E9009BFFFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA7C050E257678E9009BFFFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		513BB9A36C522A0894B084ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CommonChatPhoneTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68B76933495FB32F611A965E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CommonChatPhone/Pods-CommonChatPhone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CommonChatPhone/Pods-CommonChatPhone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CommonChatPhone/Pods-CommonChatPhone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72FFD64E9737466FA1351E55 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CommonChatPhone-CommonChatPhoneUITests/Pods-CommonChatPhone-CommonChatPhoneUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CommonChatPhone-CommonChatPhoneUITests/Pods-CommonChatPhone-CommonChatPhoneUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CommonChatPhone-CommonChatPhoneUITests/Pods-CommonChatPhone-CommonChatPhoneUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C695C072DC7FE6359740201 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CommonChatPhone-CommonChatPhoneUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8C1CB2006D7B7261114C920 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CommonChatPhone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA7C04E8257678E8009BFFFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA7C056D2576B7E4009BFFFC /* HabMeetDetailTimeItems.swift in Sources */,
+				DA7C05682576B583009BFFFC /* HabMeetDetailRowsHorizenCell.swift in Sources */,
+				DA7C053D25767D13009BFFFC /* HABMeetDetailView.swift in Sources */,
+				DA7C04F4257678E8009BFFFC /* ViewController.swift in Sources */,
+				DA7C053525767CC6009BFFFC /* HABMeetDetailViewController.swift in Sources */,
+				DA7C056225769EBB009BFFFC /* HABMeetDetailHorizenSliderView.swift in Sources */,
+				DA7C04F0257678E8009BFFFC /* AppDelegate.swift in Sources */,
+				DA7C04F2257678E8009BFFFC /* SceneDelegate.swift in Sources */,
+				DA7C04FA257678E8009BFFFC /* CommonChatPhone.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA7C0501257678E9009BFFFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA7C050A257678E9009BFFFC /* CommonChatPhoneTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA7C050C257678E9009BFFFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA7C0515257678E9009BFFFC /* CommonChatPhoneUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA7C0507257678E9009BFFFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA7C04EB257678E8009BFFFC /* CommonChatPhone */;
+			targetProxy = DA7C0506257678E9009BFFFC /* PBXContainerItemProxy */;
+		};
+		DA7C0512257678E9009BFFFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA7C04EB257678E8009BFFFC /* CommonChatPhone */;
+			targetProxy = DA7C0511257678E9009BFFFC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DA7C04F5257678E8009BFFFC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA7C04F6257678E8009BFFFC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DA7C04FD257678E9009BFFFC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA7C04FE257678E9009BFFFC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA7C0517257678E9009BFFFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DA7C0518257678E9009BFFFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA7C051A257678E9009BFFFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9ADD2F97EE0A32081E97257C /* Pods-CommonChatPhone.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZR65RQ5GJR;
+				INFOPLIST_FILE = CommonChatPhone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dulpyhb.CommonChatPhone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA7C051B257678E9009BFFFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C167ACF5A8D2077FDE45113E /* Pods-CommonChatPhone.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZR65RQ5GJR;
+				INFOPLIST_FILE = CommonChatPhone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dulpyhb.CommonChatPhone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DA7C051D257678E9009BFFFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA07F1301B2D8ADCEBB6780E /* Pods-CommonChatPhoneTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZR65RQ5GJR;
+				INFOPLIST_FILE = CommonChatPhoneTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dulpyhb.CommonChatPhoneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CommonChatPhone.app/CommonChatPhone";
+			};
+			name = Debug;
+		};
+		DA7C051E257678E9009BFFFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4989EB374BB472C51205FC2 /* Pods-CommonChatPhoneTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZR65RQ5GJR;
+				INFOPLIST_FILE = CommonChatPhoneTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dulpyhb.CommonChatPhoneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CommonChatPhone.app/CommonChatPhone";
+			};
+			name = Release;
+		};
+		DA7C0520257678E9009BFFFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6EF7AFFE8447DBB3E972C8C /* Pods-CommonChatPhone-CommonChatPhoneUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZR65RQ5GJR;
+				INFOPLIST_FILE = CommonChatPhoneUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dulpyhb.CommonChatPhoneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CommonChatPhone;
+			};
+			name = Debug;
+		};
+		DA7C0521257678E9009BFFFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF8E40575C5F43D94570DDF6 /* Pods-CommonChatPhone-CommonChatPhoneUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZR65RQ5GJR;
+				INFOPLIST_FILE = CommonChatPhoneUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dulpyhb.CommonChatPhoneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CommonChatPhone;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA7C04E7257678E8009BFFFC /* Build configuration list for PBXProject "CommonChatPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA7C0517257678E9009BFFFC /* Debug */,
+				DA7C0518257678E9009BFFFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA7C0519257678E9009BFFFC /* Build configuration list for PBXNativeTarget "CommonChatPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA7C051A257678E9009BFFFC /* Debug */,
+				DA7C051B257678E9009BFFFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA7C051C257678E9009BFFFC /* Build configuration list for PBXNativeTarget "CommonChatPhoneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA7C051D257678E9009BFFFC /* Debug */,
+				DA7C051E257678E9009BFFFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA7C051F257678E9009BFFFC /* Build configuration list for PBXNativeTarget "CommonChatPhoneUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA7C0520257678E9009BFFFC /* Debug */,
+				DA7C0521257678E9009BFFFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DA7C04F8257678E8009BFFFC /* CommonChatPhone.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DA7C04F9257678E8009BFFFC /* CommonChatPhone.xcdatamodel */,
+			);
+			currentVersion = DA7C04F9257678E8009BFFFC /* CommonChatPhone.xcdatamodel */;
+			path = CommonChatPhone.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DA7C04E4257678E8009BFFFC /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Pods_CommonChatPhone {
+  umbrella header "Pods-CommonChatPhone-umbrella.h"
+
+  export *
+  module * { export * }
+}
