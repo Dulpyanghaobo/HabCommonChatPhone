@@ -21,7 +21,8 @@ class HABMeetDetailView: UIView {
     
     private let profileButton : UIButton = {
         let button = UIButton()
-        let image = UIImage(systemName: "person.circle.fill" ,withConfiguration: UIImage.SymbolConfiguration(textStyle: .largeTitle))
+        let image : UIImage?
+        image = UIImage(systemName: "person.circle.fill" ,withConfiguration: UIImage.SymbolConfiguration(textStyle: .largeTitle))
         button.setImage(image, for: .normal)
         button.layer.cornerRadius = 24
         button.layer.masksToBounds = true
@@ -43,11 +44,7 @@ class HABMeetDetailView: UIView {
         button.setTitleColor(.black, for: .normal)
         button.layer.cornerRadius = 16
         button.layer.borderWidth = 1
-        if #available(iOS 13.0, *) {
-            button.layer.borderColor = UIColor.systemGray6.cgColor
-        } else {
-            button.layer.borderColor = UIColor.systemGray.cgColor
-        }
+        button.layer.borderColor = UIColor.systemGray.cgColor
         button.layer.masksToBounds = true
         button.titleLabel?.font = .systemFont(ofSize: 20, weight: .bold)
         button.contentEdgeInsets = UIEdgeInsets(top: 5, left: 10, bottom: 5, right: 10)

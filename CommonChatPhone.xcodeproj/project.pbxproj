@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0424AC132577410000B769C9 /* HABMeetDetailMeetContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0424AC12257740FF00B769C9 /* HABMeetDetailMeetContentView.swift */; };
 		7597C5654DF9FFA6D0C1A0D4 /* Pods_CommonChatPhone_CommonChatPhoneUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F631D30BE26A46EA674ECE1C /* Pods_CommonChatPhone_CommonChatPhoneUITests.framework */; };
 		872A8C20F6102ADDE1622A89 /* Pods_CommonChatPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC6492803ABA754A61126FA1 /* Pods_CommonChatPhone.framework */; };
 		8E95CF7C127863349277F43B /* Pods_CommonChatPhoneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 575B0FF3484DDBD8EE7C1E21 /* Pods_CommonChatPhoneTests.framework */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0424AC12257740FF00B769C9 /* HABMeetDetailMeetContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABMeetDetailMeetContentView.swift; sourceTree = "<group>"; };
 		575B0FF3484DDBD8EE7C1E21 /* Pods_CommonChatPhoneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonChatPhoneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ADD2F97EE0A32081E97257C /* Pods-CommonChatPhone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonChatPhone.debug.xcconfig"; path = "Target Support Files/Pods-CommonChatPhone/Pods-CommonChatPhone.debug.xcconfig"; sourceTree = "<group>"; };
 		AF8E40575C5F43D94570DDF6 /* Pods-CommonChatPhone-CommonChatPhoneUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonChatPhone-CommonChatPhoneUITests.release.xcconfig"; path = "Target Support Files/Pods-CommonChatPhone-CommonChatPhoneUITests/Pods-CommonChatPhone-CommonChatPhoneUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 				DA7C05662576B55B009BFFFC /* SubViews */,
 				DA7C053C25767D13009BFFFC /* HABMeetDetailView.swift */,
 				DA7C056125769EBB009BFFFC /* HABMeetDetailHorizenSliderView.swift */,
+				0424AC12257740FF00B769C9 /* HABMeetDetailMeetContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -483,6 +486,7 @@
 				DA7C056D2576B7E4009BFFFC /* HabMeetDetailTimeItems.swift in Sources */,
 				DA7C05682576B583009BFFFC /* HabMeetDetailRowsHorizenCell.swift in Sources */,
 				DA7C053D25767D13009BFFFC /* HABMeetDetailView.swift in Sources */,
+				0424AC132577410000B769C9 /* HABMeetDetailMeetContentView.swift in Sources */,
 				DA7C04F4257678E8009BFFFC /* ViewController.swift in Sources */,
 				DA7C053525767CC6009BFFFC /* HABMeetDetailViewController.swift in Sources */,
 				DA7C056225769EBB009BFFFC /* HABMeetDetailHorizenSliderView.swift in Sources */,
@@ -666,7 +670,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZR65RQ5GJR;
+				DEVELOPMENT_TEAM = WSJK7MN7ZH;
 				INFOPLIST_FILE = CommonChatPhone/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -687,7 +691,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZR65RQ5GJR;
+				DEVELOPMENT_TEAM = WSJK7MN7ZH;
 				INFOPLIST_FILE = CommonChatPhone/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
