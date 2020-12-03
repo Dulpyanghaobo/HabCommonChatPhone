@@ -8,6 +8,5 @@
 import UIKit
 
 class HABMeetDetailMeetContentView: UIView {
-    p_s
 
 }
