@@ -58,7 +58,7 @@ class HABMeetDetailViewController: UIViewController {
     }
     @objc func GetAction() {
 //        请求URL
-        let url = NSURL(string: "http://localhost:8080/ping")
+        let url = NSURL(string: "http://localhost:8000/test")
         var request = URLRequest(url: url! as URL)
         request.httpMethod = "GET"
                 let configuration:URLSessionConfiguration = URLSessionConfiguration.default
