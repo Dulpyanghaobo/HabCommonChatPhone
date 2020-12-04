@@ -22,7 +22,7 @@ class HABMeetDetailViewController: UIViewController {
     }()
     private let button : UIButton = {
         let button = UIButton()
-        button.setTitle("点击网络请求", for: .normal)
+        button.setTitle("点击创建文件", for: .normal)
         button.backgroundColor = .link
         button.setTitleColor(.white, for: .normal)
         button.layer.cornerRadius = 12
@@ -31,6 +31,7 @@ class HABMeetDetailViewController: UIViewController {
         button.addTarget(self, action: #selector(GetAction), for: .touchUpInside)
         return button
     } ()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         p_setUpUI()
@@ -58,9 +59,9 @@ class HABMeetDetailViewController: UIViewController {
     }
     @objc func GetAction() {
 //        请求URL
-        let url = NSURL(string: "http://localhost:8080/ping")
+        let url = NSURL(string: "http://127.0.0.1:8000/api/v1/articles?tag_id=1&title=test1&desc=test-desc&content=test-content&created_by=test-created&state=1")
         var request = URLRequest(url: url! as URL)
-        request.httpMethod = "GET"
+        request.httpMethod = "POST"
                 let configuration:URLSessionConfiguration = URLSessionConfiguration.default
                 let session:URLSession = URLSession(configuration: configuration)
                 let task:URLSessionDataTask = session.dataTask(with: request) { (data, response, error)->Void in
@@ -69,7 +70,7 @@ class HABMeetDetailViewController: UIViewController {
                let responseData:NSDictionary = try JSONSerialization.jsonObject(with: data!, options:   JSONSerialization.ReadingOptions.allowFragments) as! NSDictionary
                             print("response:\(response)")
                             print("responseData:\(responseData)")
-                            self.age.message = responseData["message"] as! String
+                            self.age.message = responseData["data"] as! String
                             print("\(String(describing: self.age.message))")
                   }catch{
                             print("catch")

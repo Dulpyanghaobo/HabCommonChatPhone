@@ -97,7 +97,7 @@ class HABMeetDetailView: UIView {
         fatalError("错误")
     }
     @objc private func doTapProfile() {
-        print("点击profile")
+        
     }
     @objc private func didTapAdd() {
         print("添加会议")

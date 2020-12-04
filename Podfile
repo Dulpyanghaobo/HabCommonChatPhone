@@ -6,6 +6,8 @@ target 'CommonChatPhone' do
   use_frameworks!
 
   pod 'SnapKit'
+  pod 'Alamofire', '~> 5.2'
+  pod 'SwiftyJSON'
 
   target 'CommonChatPhoneTests' do
     inherit! :search_paths

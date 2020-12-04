@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0424AC132577410000B769C9 /* HABMeetDetailMeetContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0424AC12257740FF00B769C9 /* HABMeetDetailMeetContentView.swift */; };
+		04800FC3257A1173004CFD8D /* HABLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04800FC2257A1173004CFD8D /* HABLoginController.swift */; };
+		04800FC8257A1185004CFD8D /* HABRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04800FC7257A1185004CFD8D /* HABRegisterViewController.swift */; };
+		04800FCD257A123C004CFD8D /* HABLoginRegsiterInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04800FCC257A123C004CFD8D /* HABLoginRegsiterInputView.swift */; };
+		04AE6194257A3B350085B1FA /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE6193257A3B350085B1FA /* Article.swift */; };
+		04AE6199257A3B880085B1FA /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE6198257A3B880085B1FA /* ArticleModel.swift */; };
 		7597C5654DF9FFA6D0C1A0D4 /* Pods_CommonChatPhone_CommonChatPhoneUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F631D30BE26A46EA674ECE1C /* Pods_CommonChatPhone_CommonChatPhoneUITests.framework */; };
 		872A8C20F6102ADDE1622A89 /* Pods_CommonChatPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC6492803ABA754A61126FA1 /* Pods_CommonChatPhone.framework */; };
 		8E95CF7C127863349277F43B /* Pods_CommonChatPhoneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 575B0FF3484DDBD8EE7C1E21 /* Pods_CommonChatPhoneTests.framework */; };
@@ -46,6 +51,11 @@
 
 /* Begin PBXFileReference section */
 		0424AC12257740FF00B769C9 /* HABMeetDetailMeetContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABMeetDetailMeetContentView.swift; sourceTree = "<group>"; };
+		04800FC2257A1173004CFD8D /* HABLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABLoginController.swift; sourceTree = "<group>"; };
+		04800FC7257A1185004CFD8D /* HABRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABRegisterViewController.swift; sourceTree = "<group>"; };
+		04800FCC257A123C004CFD8D /* HABLoginRegsiterInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABLoginRegsiterInputView.swift; sourceTree = "<group>"; };
+		04AE6193257A3B350085B1FA /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		04AE6198257A3B880085B1FA /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
 		575B0FF3484DDBD8EE7C1E21 /* Pods_CommonChatPhoneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonChatPhoneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ADD2F97EE0A32081E97257C /* Pods-CommonChatPhone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonChatPhone.debug.xcconfig"; path = "Target Support Files/Pods-CommonChatPhone/Pods-CommonChatPhone.debug.xcconfig"; sourceTree = "<group>"; };
 		AF8E40575C5F43D94570DDF6 /* Pods-CommonChatPhone-CommonChatPhoneUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonChatPhone-CommonChatPhoneUITests.release.xcconfig"; path = "Target Support Files/Pods-CommonChatPhone-CommonChatPhoneUITests/Pods-CommonChatPhone-CommonChatPhoneUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -105,6 +115,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04800FBB257A1104004CFD8D /* UserDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UserDetail;
+			sourceTree = "<group>";
+		};
+		04800FBC257A110F004CFD8D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				04800FC1257A115E004CFD8D /* Models */,
+				04800FC0257A115A004CFD8D /* Views */,
+				04800FBF257A1155004CFD8D /* ViewModels */,
+				04800FBE257A114B004CFD8D /* ViewControllers */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		04800FBE257A114B004CFD8D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				04800FC2257A1173004CFD8D /* HABLoginController.swift */,
+				04800FC7257A1185004CFD8D /* HABRegisterViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		04800FBF257A1155004CFD8D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		04800FC0257A115A004CFD8D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				04800FCC257A123C004CFD8D /* HABLoginRegsiterInputView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		04800FC1257A115E004CFD8D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04AE6193257A3B350085B1FA /* Article.swift */,
+				04AE6198257A3B880085B1FA /* ArticleModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		3D9A60DFC33014A54C5FBC96 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +214,8 @@
 		DA7C04EE257678E8009BFFFC /* CommonChatPhone */ = {
 			isa = PBXGroup;
 			children = (
+				04800FBC257A110F004CFD8D /* Login */,
+				04800FBB257A1104004CFD8D /* UserDetail */,
 				DA7C052E25767C64009BFFFC /* MeetingDetail */,
 				DA7C04EF257678E8009BFFFC /* AppDelegate.swift */,
 				DA7C04F1257678E8009BFFFC /* SceneDelegate.swift */,
@@ -483,14 +546,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04AE6194257A3B350085B1FA /* Article.swift in Sources */,
+				04AE6199257A3B880085B1FA /* ArticleModel.swift in Sources */,
 				DA7C056D2576B7E4009BFFFC /* HabMeetDetailTimeItems.swift in Sources */,
 				DA7C05682576B583009BFFFC /* HabMeetDetailRowsHorizenCell.swift in Sources */,
+				04800FC3257A1173004CFD8D /* HABLoginController.swift in Sources */,
+				04800FCD257A123C004CFD8D /* HABLoginRegsiterInputView.swift in Sources */,
 				DA7C053D25767D13009BFFFC /* HABMeetDetailView.swift in Sources */,
 				0424AC132577410000B769C9 /* HABMeetDetailMeetContentView.swift in Sources */,
 				DA7C04F4257678E8009BFFFC /* ViewController.swift in Sources */,
 				DA7C053525767CC6009BFFFC /* HABMeetDetailViewController.swift in Sources */,
 				DA7C056225769EBB009BFFFC /* HABMeetDetailHorizenSliderView.swift in Sources */,
 				DA7C04F0257678E8009BFFFC /* AppDelegate.swift in Sources */,
+				04800FC8257A1185004CFD8D /* HABRegisterViewController.swift in Sources */,
 				DA7C04F2257678E8009BFFFC /* SceneDelegate.swift in Sources */,
 				DA7C04FA257678E8009BFFFC /* CommonChatPhone.xcdatamodeld in Sources */,
 			);
