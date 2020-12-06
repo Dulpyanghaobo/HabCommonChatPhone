@@ -30,6 +30,8 @@
 		DA7C05682576B583009BFFFC /* HabMeetDetailRowsHorizenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C05672576B583009BFFFC /* HabMeetDetailRowsHorizenCell.swift */; };
 		DA7C056D2576B7E4009BFFFC /* HabMeetDetailTimeItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C056C2576B7E4009BFFFC /* HabMeetDetailTimeItems.swift */; };
 		DA801EE0257D38F600393E83 /* HABNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA801EDF257D38F600393E83 /* HABNetworking.swift */; };
+		DA801EF9257D445300393E83 /* HABNetworking+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA801EF8257D445300393E83 /* HABNetworking+Alamofire.swift */; };
+		DA801EFE257D47F300393E83 /* HABMeetDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA801EFD257D47F300393E83 /* HABMeetDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 		DA7C05672576B583009BFFFC /* HabMeetDetailRowsHorizenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabMeetDetailRowsHorizenCell.swift; sourceTree = "<group>"; };
 		DA7C056C2576B7E4009BFFFC /* HabMeetDetailTimeItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabMeetDetailTimeItems.swift; sourceTree = "<group>"; };
 		DA801EDF257D38F600393E83 /* HABNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABNetworking.swift; sourceTree = "<group>"; };
+		DA801EF8257D445300393E83 /* HABNetworking+Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HABNetworking+Alamofire.swift"; sourceTree = "<group>"; };
+		DA801EFD257D47F300393E83 /* HABMeetDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HABMeetDetailViewModel.swift; path = CommonChatPhone/HABMeetDetailViewModel.swift; sourceTree = SOURCE_ROOT; };
 		EA07F1301B2D8ADCEBB6780E /* Pods-CommonChatPhoneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonChatPhoneTests.debug.xcconfig"; path = "Target Support Files/Pods-CommonChatPhoneTests/Pods-CommonChatPhoneTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F631D30BE26A46EA674ECE1C /* Pods_CommonChatPhone_CommonChatPhoneUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonChatPhone_CommonChatPhoneUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -272,6 +276,7 @@
 		DA7C053025767C73009BFFFC /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				DA801EFD257D47F300393E83 /* HABMeetDetailViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -321,6 +326,7 @@
 		DA801EDD257D38CD00393E83 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				DA801EE4257D3AE900393E83 /* Networking */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -330,6 +336,14 @@
 			children = (
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		DA801EE4257D3AE900393E83 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				DA801EF8257D445300393E83 /* HABNetworking+Alamofire.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -576,6 +590,7 @@
 				DA7C05682576B583009BFFFC /* HabMeetDetailRowsHorizenCell.swift in Sources */,
 				04800FC3257A1173004CFD8D /* HABLoginController.swift in Sources */,
 				04800FCD257A123C004CFD8D /* HABLoginRegsiterInputView.swift in Sources */,
+				DA801EF9257D445300393E83 /* HABNetworking+Alamofire.swift in Sources */,
 				DA7C053D25767D13009BFFFC /* HABMeetDetailView.swift in Sources */,
 				0424AC132577410000B769C9 /* HABMeetDetailMeetContentView.swift in Sources */,
 				DA7C04F4257678E8009BFFFC /* ViewController.swift in Sources */,
@@ -584,6 +599,7 @@
 				DA7C04F0257678E8009BFFFC /* AppDelegate.swift in Sources */,
 				04800FC8257A1185004CFD8D /* HABRegisterViewController.swift in Sources */,
 				DA7C04F2257678E8009BFFFC /* SceneDelegate.swift in Sources */,
+				DA801EFE257D47F300393E83 /* HABMeetDetailViewModel.swift in Sources */,
 				DA7C04FA257678E8009BFFFC /* CommonChatPhone.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,6 +9,10 @@ import UIKit
 
 @available(iOS 13.0, *)
 class HABMeetDetailViewController: UIViewController {
+    public var viewModel: HABMeetDetailViewModel?
+
+    
+    
     var age = Message(message: "dmeo")
     private let headView : HABMeetDetailView = {
         let headView = HABMeetDetailView()

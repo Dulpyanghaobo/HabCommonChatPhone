@@ -8,10 +8,9 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
-
 @available(iOS 13.0, *)
 class HABLoginController: UIViewController {
-
+    
     private let headView : HABLoginRegsiterInputView = {
         let headView = HABLoginRegsiterInputView()
         headView.callBackBlock { (email,password) in
@@ -35,7 +34,10 @@ class HABLoginController: UIViewController {
                                             for list in lists {
                                                 let articlies = JSON(list)
                                                 let model = Articles.init(jsonData: articlies)
-                                                print(model)
+                                                let meetDetailViewModel = HABMeetDetailViewModel(user: login, articles: model)
+                                                let meetDetailVC = HABMeetDetailViewController()
+                                                meetDetailVC.viewModel = meetDetailViewModel
+                                                
                                             }
 
                                         }
@@ -57,6 +59,7 @@ class HABLoginController: UIViewController {
         override func viewDidLoad() {
             super.viewDidLoad()
             self.title = "登录"
+            self.navigationController?.title = "demo"
             p_setUpUI()
         }
     func p_setUpUI() {
