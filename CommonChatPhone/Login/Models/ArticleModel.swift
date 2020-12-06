@@ -6,17 +6,54 @@
 //
 
 import Foundation
-// 定义模型名称
-struct HABArticle: Codable {
-    var content: String
-    var created_by: String
-    var created_on: String
-    var desc: String
-    var modified_by: String
-    var modified_on: String
-    var state: Int
-    var tag_id : String
-    var title : String
+import SwiftyJSON
 
+// 定义模型名称
+struct Login: Encodable {
+    let username: String
+    let password: String
+    var token : String
+}
+struct Tag : Encodable {
+    let created_by : String
+    let created_on : String
+    let modified_by : String
+    let modified_on : String
+    let name : String
+    let state : Int
+    init(jsonData:JSON) {
+        created_by = jsonData["created_by"].stringValue
+        created_on = jsonData["created_on"].stringValue
+        modified_by = jsonData["modified_by"].stringValue
+        modified_on = jsonData["modified_on"].stringValue
+        name = jsonData["name"].stringValue
+        state = jsonData["state"].intValue
+
+    }
+}
+struct Articles: Encodable {
+    let content: String
+    let created_by: String
+    let created_on : String
+    let desc : String
+    let modified_by : String
+    let modified_on : String
+    let state : Int
+    let tag_id : Int
+    let title : String
+    let tag : Tag
+    init(jsonData: JSON) {
+        content = jsonData["content"].stringValue
+        created_by = jsonData["created_by"].stringValue
+        created_on = jsonData["created_on"].stringValue
+        desc = jsonData["desc"].stringValue
+        modified_by = jsonData["modified_by"].stringValue
+        modified_on = jsonData["modified_on"].stringValue
+        state = jsonData["state"].intValue
+        tag_id = jsonData["tag_id"].intValue
+        title = jsonData["title"].stringValue
+        tag = Tag(jsonData:jsonData["tag"])
+        
+    }
 }
 

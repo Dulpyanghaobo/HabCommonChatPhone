@@ -11,7 +11,6 @@
 		04800FC3257A1173004CFD8D /* HABLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04800FC2257A1173004CFD8D /* HABLoginController.swift */; };
 		04800FC8257A1185004CFD8D /* HABRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04800FC7257A1185004CFD8D /* HABRegisterViewController.swift */; };
 		04800FCD257A123C004CFD8D /* HABLoginRegsiterInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04800FCC257A123C004CFD8D /* HABLoginRegsiterInputView.swift */; };
-		04AE6194257A3B350085B1FA /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE6193257A3B350085B1FA /* Article.swift */; };
 		04AE6199257A3B880085B1FA /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE6198257A3B880085B1FA /* ArticleModel.swift */; };
 		7597C5654DF9FFA6D0C1A0D4 /* Pods_CommonChatPhone_CommonChatPhoneUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F631D30BE26A46EA674ECE1C /* Pods_CommonChatPhone_CommonChatPhoneUITests.framework */; };
 		872A8C20F6102ADDE1622A89 /* Pods_CommonChatPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC6492803ABA754A61126FA1 /* Pods_CommonChatPhone.framework */; };
@@ -30,6 +29,7 @@
 		DA7C056225769EBB009BFFFC /* HABMeetDetailHorizenSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C056125769EBB009BFFFC /* HABMeetDetailHorizenSliderView.swift */; };
 		DA7C05682576B583009BFFFC /* HabMeetDetailRowsHorizenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C05672576B583009BFFFC /* HabMeetDetailRowsHorizenCell.swift */; };
 		DA7C056D2576B7E4009BFFFC /* HabMeetDetailTimeItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C056C2576B7E4009BFFFC /* HabMeetDetailTimeItems.swift */; };
+		DA801EE0257D38F600393E83 /* HABNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA801EDF257D38F600393E83 /* HABNetworking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +54,6 @@
 		04800FC2257A1173004CFD8D /* HABLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABLoginController.swift; sourceTree = "<group>"; };
 		04800FC7257A1185004CFD8D /* HABRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABRegisterViewController.swift; sourceTree = "<group>"; };
 		04800FCC257A123C004CFD8D /* HABLoginRegsiterInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABLoginRegsiterInputView.swift; sourceTree = "<group>"; };
-		04AE6193257A3B350085B1FA /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		04AE6198257A3B880085B1FA /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
 		575B0FF3484DDBD8EE7C1E21 /* Pods_CommonChatPhoneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonChatPhoneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ADD2F97EE0A32081E97257C /* Pods-CommonChatPhone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonChatPhone.debug.xcconfig"; path = "Target Support Files/Pods-CommonChatPhone/Pods-CommonChatPhone.debug.xcconfig"; sourceTree = "<group>"; };
@@ -83,6 +82,7 @@
 		DA7C056125769EBB009BFFFC /* HABMeetDetailHorizenSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABMeetDetailHorizenSliderView.swift; sourceTree = "<group>"; };
 		DA7C05672576B583009BFFFC /* HabMeetDetailRowsHorizenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabMeetDetailRowsHorizenCell.swift; sourceTree = "<group>"; };
 		DA7C056C2576B7E4009BFFFC /* HabMeetDetailTimeItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabMeetDetailTimeItems.swift; sourceTree = "<group>"; };
+		DA801EDF257D38F600393E83 /* HABNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABNetworking.swift; sourceTree = "<group>"; };
 		EA07F1301B2D8ADCEBB6780E /* Pods-CommonChatPhoneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonChatPhoneTests.debug.xcconfig"; path = "Target Support Files/Pods-CommonChatPhoneTests/Pods-CommonChatPhoneTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F631D30BE26A46EA674ECE1C /* Pods_CommonChatPhone_CommonChatPhoneUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonChatPhone_CommonChatPhoneUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -160,7 +160,6 @@
 		04800FC1257A115E004CFD8D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				04AE6193257A3B350085B1FA /* Article.swift */,
 				04AE6198257A3B880085B1FA /* ArticleModel.swift */,
 			);
 			path = Models;
@@ -214,6 +213,9 @@
 		DA7C04EE257678E8009BFFFC /* CommonChatPhone */ = {
 			isa = PBXGroup;
 			children = (
+				DA801EDE257D38D400393E83 /* UI */,
+				DA801EDD257D38CD00393E83 /* Extension */,
+				DA801EDC257D38C300393E83 /* Define */,
 				04800FBC257A110F004CFD8D /* Login */,
 				04800FBB257A1104004CFD8D /* UserDetail */,
 				DA7C052E25767C64009BFFFC /* MeetingDetail */,
@@ -306,6 +308,28 @@
 				DA7C05672576B583009BFFFC /* HabMeetDetailRowsHorizenCell.swift */,
 			);
 			path = SubViews;
+			sourceTree = "<group>";
+		};
+		DA801EDC257D38C300393E83 /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				DA801EDF257D38F600393E83 /* HABNetworking.swift */,
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		DA801EDD257D38CD00393E83 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		DA801EDE257D38D400393E83 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -546,7 +570,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04AE6194257A3B350085B1FA /* Article.swift in Sources */,
+				DA801EE0257D38F600393E83 /* HABNetworking.swift in Sources */,
 				04AE6199257A3B880085B1FA /* ArticleModel.swift in Sources */,
 				DA7C056D2576B7E4009BFFFC /* HabMeetDetailTimeItems.swift in Sources */,
 				DA7C05682576B583009BFFFC /* HabMeetDetailRowsHorizenCell.swift in Sources */,
