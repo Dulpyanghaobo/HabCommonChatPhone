@@ -8,7 +8,9 @@ target 'CommonChatPhone' do
   pod 'SnapKit'
   pod 'Alamofire', '~> 5.2'
   pod 'SwiftyJSON'
-
+  pod 'SwiftTheme'
+  pod 'HABFlowKit'
+  pod 'SSZipArchive' #Zip解压
   target 'CommonChatPhoneTests' do
     inherit! :search_paths
     # Pods for testing

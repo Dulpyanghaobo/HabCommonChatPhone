@@ -1,0 +1,6 @@
+framework module HABFlowKit {
+  umbrella header "HABFlowKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

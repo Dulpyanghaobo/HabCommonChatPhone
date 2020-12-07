@@ -15,9 +15,25 @@
 		7597C5654DF9FFA6D0C1A0D4 /* Pods_CommonChatPhone_CommonChatPhoneUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F631D30BE26A46EA674ECE1C /* Pods_CommonChatPhone_CommonChatPhoneUITests.framework */; };
 		872A8C20F6102ADDE1622A89 /* Pods_CommonChatPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC6492803ABA754A61126FA1 /* Pods_CommonChatPhone.framework */; };
 		8E95CF7C127863349277F43B /* Pods_CommonChatPhoneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 575B0FF3484DDBD8EE7C1E21 /* Pods_CommonChatPhoneTests.framework */; };
+		DA553E86257E85B500688065 /* HABMainDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA553E85257E85B500688065 /* HABMainDataController.swift */; };
+		DA553E91257E88B000688065 /* HABBaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA553E90257E88B000688065 /* HABBaseTabBarController.swift */; };
+		DA553EA4257E8D1900688065 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA553EA3257E8D1900688065 /* UIColor+Extension.swift */; };
+		DA553EA9257E8DF600688065 /* UIColor+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA553EA8257E8DF600688065 /* UIColor+Common.swift */; };
+		DA553EB8257E93D500688065 /* HABMyHaoBoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA553EB7257E93D500688065 /* HABMyHaoBoViewController.swift */; };
+		DA553EC0257E941A00688065 /* BuyHabCoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA553EBF257E941A00688065 /* BuyHabCoinViewController.swift */; };
+		DA553ED9257E961000688065 /* HABTransactionHabCoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA553ED7257E961000688065 /* HABTransactionHabCoinViewController.swift */; };
+		DA553EE8257E965600688065 /* SellHabCoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA553EE7257E965600688065 /* SellHabCoinViewController.swift */; };
+		DA553EF2257E972700688065 /* HABMarketQuotesHabCoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA553EEE257E972700688065 /* HABMarketQuotesHabCoinViewController.swift */; };
+		DA553F00257E987F00688065 /* HABMeetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA553EFF257E987F00688065 /* HABMeetingViewController.swift */; };
+		DA553F07257E98F300688065 /* HABContractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA553F06257E98F300688065 /* HABContractViewController.swift */; };
+		DA553F16257E9C2B00688065 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA553F15257E9C2B00688065 /* UIImage+Extension.swift */; };
+		DA553F2A257E9E2900688065 /* AppCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA553F29257E9E2900688065 /* AppCommon.swift */; };
+		DA553F32257E9F5C00688065 /* HABBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA553F31257E9F5C00688065 /* HABBaseNavigationController.swift */; };
+		DA707690257EAB9C008932F6 /* Light.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA70768D257EAB9C008932F6 /* Light.plist */; };
+		DA707691257EAB9C008932F6 /* Night.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA70768E257EAB9C008932F6 /* Night.plist */; };
+		DA707692257EAB9C008932F6 /* AppThemes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70768F257EAB9C008932F6 /* AppThemes.swift */; };
 		DA7C04F0257678E8009BFFFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C04EF257678E8009BFFFC /* AppDelegate.swift */; };
 		DA7C04F2257678E8009BFFFC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C04F1257678E8009BFFFC /* SceneDelegate.swift */; };
-		DA7C04F4257678E8009BFFFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C04F3257678E8009BFFFC /* ViewController.swift */; };
 		DA7C04F7257678E8009BFFFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA7C04F5257678E8009BFFFC /* Main.storyboard */; };
 		DA7C04FA257678E8009BFFFC /* CommonChatPhone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA7C04F8257678E8009BFFFC /* CommonChatPhone.xcdatamodeld */; };
 		DA7C04FC257678E9009BFFFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA7C04FB257678E9009BFFFC /* Assets.xcassets */; };
@@ -64,10 +80,28 @@
 		B6EF7AFFE8447DBB3E972C8C /* Pods-CommonChatPhone-CommonChatPhoneUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonChatPhone-CommonChatPhoneUITests.debug.xcconfig"; path = "Target Support Files/Pods-CommonChatPhone-CommonChatPhoneUITests/Pods-CommonChatPhone-CommonChatPhoneUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BC6492803ABA754A61126FA1 /* Pods_CommonChatPhone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonChatPhone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C167ACF5A8D2077FDE45113E /* Pods-CommonChatPhone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonChatPhone.release.xcconfig"; path = "Target Support Files/Pods-CommonChatPhone/Pods-CommonChatPhone.release.xcconfig"; sourceTree = "<group>"; };
+		DA553E85257E85B500688065 /* HABMainDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABMainDataController.swift; sourceTree = "<group>"; };
+		DA553E90257E88B000688065 /* HABBaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABBaseTabBarController.swift; sourceTree = "<group>"; };
+		DA553EA3257E8D1900688065 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		DA553EA8257E8DF600688065 /* UIColor+Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Common.swift"; sourceTree = "<group>"; };
+		DA553EB7257E93D500688065 /* HABMyHaoBoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABMyHaoBoViewController.swift; sourceTree = "<group>"; };
+		DA553EBF257E941A00688065 /* BuyHabCoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyHabCoinViewController.swift; sourceTree = "<group>"; };
+		DA553ED7257E961000688065 /* HABTransactionHabCoinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HABTransactionHabCoinViewController.swift; sourceTree = "<group>"; };
+		DA553EE7257E965600688065 /* SellHabCoinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellHabCoinViewController.swift; sourceTree = "<group>"; };
+		DA553EEE257E972700688065 /* HABMarketQuotesHabCoinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HABMarketQuotesHabCoinViewController.swift; sourceTree = "<group>"; };
+		DA553EFF257E987F00688065 /* HABMeetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABMeetingViewController.swift; sourceTree = "<group>"; };
+		DA553F06257E98F300688065 /* HABContractViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABContractViewController.swift; sourceTree = "<group>"; };
+		DA553F15257E9C2B00688065 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		DA553F29257E9E2900688065 /* AppCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCommon.swift; sourceTree = "<group>"; };
+		DA553F31257E9F5C00688065 /* HABBaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABBaseNavigationController.swift; sourceTree = "<group>"; };
+		DA70768D257EAB9C008932F6 /* Light.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Light.plist; sourceTree = "<group>"; };
+		DA70768E257EAB9C008932F6 /* Night.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Night.plist; sourceTree = "<group>"; };
+		DA70768F257EAB9C008932F6 /* AppThemes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppThemes.swift; sourceTree = "<group>"; };
+		DA7076A2257EAC77008932F6 /* CommonChatPhone-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CommonChatPhone-Bridging-Header.h"; sourceTree = "<group>"; };
+		DA7076A3257EAC77008932F6 /* test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
 		DA7C04EC257678E8009BFFFC /* CommonChatPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommonChatPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA7C04EF257678E8009BFFFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA7C04F1257678E8009BFFFC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DA7C04F3257678E8009BFFFC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DA7C04F6257678E8009BFFFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA7C04F9257678E8009BFFFC /* CommonChatPhone.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CommonChatPhone.xcdatamodel; sourceTree = "<group>"; };
 		DA7C04FB257678E9009BFFFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -192,6 +226,365 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		DA553E77257E802700688065 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				DA7C04EF257678E8009BFFFC /* AppDelegate.swift */,
+				DA7C04F1257678E8009BFFFC /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		DA553E83257E856800688065 /* MainData */ = {
+			isa = PBXGroup;
+			children = (
+				DA553E84257E859900688065 /* ViewController */,
+			);
+			path = MainData;
+			sourceTree = "<group>";
+		};
+		DA553E84257E859900688065 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DA553E85257E85B500688065 /* HABMainDataController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DA553E8D257E886000688065 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				DA553E8E257E886D00688065 /* BaseTabBar */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		DA553E8E257E886D00688065 /* BaseTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				DA553E8F257E888300688065 /* ViewController */,
+			);
+			path = BaseTabBar;
+			sourceTree = "<group>";
+		};
+		DA553E8F257E888300688065 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DA553E90257E88B000688065 /* HABBaseTabBarController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DA553EA2257E8D0100688065 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				DA553EA3257E8D1900688065 /* UIColor+Extension.swift */,
+				DA553EA8257E8DF600688065 /* UIColor+Common.swift */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		DA553EAD257E931C00688065 /* UserCenter */ = {
+			isa = PBXGroup;
+			children = (
+				DA553EB2257E939500688065 /* Models */,
+				DA553EB1257E938F00688065 /* Views */,
+				DA553EB0257E938900688065 /* ViewModels */,
+				DA553EAF257E938100688065 /* ViewController */,
+			);
+			path = UserCenter;
+			sourceTree = "<group>";
+		};
+		DA553EAE257E932A00688065 /* BuyHabCoin */ = {
+			isa = PBXGroup;
+			children = (
+				DA553EB6257E93AD00688065 /* Models */,
+				DA553EB5257E93A700688065 /* Views */,
+				DA553EB4257E93A000688065 /* ViewModels */,
+				DA553EB3257E939A00688065 /* VIewController */,
+			);
+			path = BuyHabCoin;
+			sourceTree = "<group>";
+		};
+		DA553EAF257E938100688065 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DA553EB7257E93D500688065 /* HABMyHaoBoViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DA553EB0257E938900688065 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DA553EB1257E938F00688065 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DA553EB2257E939500688065 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DA553EB3257E939A00688065 /* VIewController */ = {
+			isa = PBXGroup;
+			children = (
+				DA553EBF257E941A00688065 /* BuyHabCoinViewController.swift */,
+			);
+			path = VIewController;
+			sourceTree = "<group>";
+		};
+		DA553EB4257E93A000688065 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DA553EB5257E93A700688065 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DA553EB6257E93AD00688065 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DA553EC7257E948C00688065 /* SellHabCoin */ = {
+			isa = PBXGroup;
+			children = (
+				DA553EE3257E965600688065 /* Models */,
+				DA553EE6257E965600688065 /* VIewController */,
+				DA553EE4257E965600688065 /* ViewModels */,
+				DA553EE5257E965600688065 /* Views */,
+			);
+			path = SellHabCoin;
+			sourceTree = "<group>";
+		};
+		DA553ED3257E955B00688065 /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				DA553EC7257E948C00688065 /* SellHabCoin */,
+				DA553EAE257E932A00688065 /* BuyHabCoin */,
+				DA553ED8257E961000688065 /* Models */,
+				DA553ED6257E961000688065 /* VIewController */,
+				DA553ED4257E961000688065 /* ViewModels */,
+				DA553ED5257E961000688065 /* Views */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
+		DA553ED4257E961000688065 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DA553ED5257E961000688065 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DA553ED6257E961000688065 /* VIewController */ = {
+			isa = PBXGroup;
+			children = (
+				DA553ED7257E961000688065 /* HABTransactionHabCoinViewController.swift */,
+			);
+			path = VIewController;
+			sourceTree = "<group>";
+		};
+		DA553ED8257E961000688065 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DA553EE3257E965600688065 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DA553EE4257E965600688065 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DA553EE5257E965600688065 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DA553EE6257E965600688065 /* VIewController */ = {
+			isa = PBXGroup;
+			children = (
+				DA553EE7257E965600688065 /* SellHabCoinViewController.swift */,
+			);
+			path = VIewController;
+			sourceTree = "<group>";
+		};
+		DA553EEC257E96C900688065 /* MarketQuotes */ = {
+			isa = PBXGroup;
+			children = (
+				DA553EF1257E972700688065 /* Models */,
+				DA553EED257E972700688065 /* VIewController */,
+				DA553EF0257E972700688065 /* ViewModels */,
+				DA553EEF257E972700688065 /* Views */,
+			);
+			path = MarketQuotes;
+			sourceTree = "<group>";
+		};
+		DA553EED257E972700688065 /* VIewController */ = {
+			isa = PBXGroup;
+			children = (
+				DA553EEE257E972700688065 /* HABMarketQuotesHabCoinViewController.swift */,
+			);
+			path = VIewController;
+			sourceTree = "<group>";
+		};
+		DA553EEF257E972700688065 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DA553EF0257E972700688065 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DA553EF1257E972700688065 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DA553EF9257E983500688065 /* Meeting */ = {
+			isa = PBXGroup;
+			children = (
+				DA553EFE257E987100688065 /* Models */,
+				DA553EFC257E986400688065 /* ViewControllers */,
+				DA553EFB257E985F00688065 /* Views */,
+				DA553EFA257E985A00688065 /* ViewModels */,
+			);
+			path = Meeting;
+			sourceTree = "<group>";
+		};
+		DA553EFA257E985A00688065 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DA553EFB257E985F00688065 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DA553EFC257E986400688065 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DA553EFF257E987F00688065 /* HABMeetingViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DA553EFE257E987100688065 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DA553F04257E98D700688065 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				DA553F05257E98E300688065 /* ViewControllers */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		DA553F05257E98E300688065 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DA553F06257E98F300688065 /* HABContractViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DA553F14257E9C0700688065 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				DA553F15257E9C2B00688065 /* UIImage+Extension.swift */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		DA553F28257E9E1200688065 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DA553F31257E9F5C00688065 /* HABBaseNavigationController.swift */,
+				DA553F29257E9E2900688065 /* AppCommon.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		DA70768A257EAB6C008932F6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DA70768B257EAB9C008932F6 /* Theme */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		DA70768B257EAB9C008932F6 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				DA70768C257EAB9C008932F6 /* Plist */,
+				DA70768F257EAB9C008932F6 /* AppThemes.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		DA70768C257EAB9C008932F6 /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				DA70768D257EAB9C008932F6 /* Light.plist */,
+				DA70768E257EAB9C008932F6 /* Night.plist */,
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
 		DA7C04E3257678E8009BFFFC = {
 			isa = PBXGroup;
 			children = (
@@ -217,20 +610,29 @@
 		DA7C04EE257678E8009BFFFC /* CommonChatPhone */ = {
 			isa = PBXGroup;
 			children = (
+				DA70768A257EAB6C008932F6 /* Utils */,
+				DA553F28257E9E1200688065 /* Common */,
+				DA553F04257E98D700688065 /* Contract */,
+				DA553EF9257E983500688065 /* Meeting */,
+				DA553EEC257E96C900688065 /* MarketQuotes */,
+				DA553ED3257E955B00688065 /* Transaction */,
+				DA553EAD257E931C00688065 /* UserCenter */,
+				DA553E8D257E886000688065 /* Tabbar */,
+				DA553E83257E856800688065 /* MainData */,
+				DA553E77257E802700688065 /* AppDelegate */,
 				DA801EDE257D38D400393E83 /* UI */,
 				DA801EDD257D38CD00393E83 /* Extension */,
 				DA801EDC257D38C300393E83 /* Define */,
 				04800FBC257A110F004CFD8D /* Login */,
 				04800FBB257A1104004CFD8D /* UserDetail */,
 				DA7C052E25767C64009BFFFC /* MeetingDetail */,
-				DA7C04EF257678E8009BFFFC /* AppDelegate.swift */,
-				DA7C04F1257678E8009BFFFC /* SceneDelegate.swift */,
-				DA7C04F3257678E8009BFFFC /* ViewController.swift */,
 				DA7C04F5257678E8009BFFFC /* Main.storyboard */,
 				DA7C04FB257678E9009BFFFC /* Assets.xcassets */,
 				DA7C04FD257678E9009BFFFC /* LaunchScreen.storyboard */,
 				DA7C0500257678E9009BFFFC /* Info.plist */,
 				DA7C04F8257678E8009BFFFC /* CommonChatPhone.xcdatamodeld */,
+				DA7076A3257EAC77008932F6 /* test.h */,
+				DA7076A2257EAC77008932F6 /* CommonChatPhone-Bridging-Header.h */,
 			);
 			path = CommonChatPhone;
 			sourceTree = "<group>";
@@ -326,6 +728,8 @@
 		DA801EDD257D38CD00393E83 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				DA553F14257E9C0700688065 /* UIImage */,
+				DA553EA2257E8D0100688065 /* UIColor */,
 				DA801EE4257D3AE900393E83 /* Networking */,
 			);
 			path = Extension;
@@ -418,6 +822,7 @@
 				TargetAttributes = {
 					DA7C04EB257678E8009BFFFC = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 					DA7C0504257678E9009BFFFC = {
 						CreatedOnToolsVersion = 12.2;
@@ -455,6 +860,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA7C04FF257678E9009BFFFC /* LaunchScreen.storyboard in Resources */,
+				DA707691257EAB9C008932F6 /* Night.plist in Resources */,
+				DA707690257EAB9C008932F6 /* Light.plist in Resources */,
 				DA7C04FC257678E9009BFFFC /* Assets.xcassets in Resources */,
 				DA7C04F7257678E8009BFFFC /* Main.storyboard in Resources */,
 			);
@@ -585,22 +992,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA801EE0257D38F600393E83 /* HABNetworking.swift in Sources */,
+				DA553EA9257E8DF600688065 /* UIColor+Common.swift in Sources */,
+				DA553EC0257E941A00688065 /* BuyHabCoinViewController.swift in Sources */,
 				04AE6199257A3B880085B1FA /* ArticleModel.swift in Sources */,
+				DA553F2A257E9E2900688065 /* AppCommon.swift in Sources */,
+				DA553F00257E987F00688065 /* HABMeetingViewController.swift in Sources */,
+				DA553E86257E85B500688065 /* HABMainDataController.swift in Sources */,
+				DA553EB8257E93D500688065 /* HABMyHaoBoViewController.swift in Sources */,
 				DA7C056D2576B7E4009BFFFC /* HabMeetDetailTimeItems.swift in Sources */,
 				DA7C05682576B583009BFFFC /* HabMeetDetailRowsHorizenCell.swift in Sources */,
 				04800FC3257A1173004CFD8D /* HABLoginController.swift in Sources */,
+				DA707692257EAB9C008932F6 /* AppThemes.swift in Sources */,
+				DA553EF2257E972700688065 /* HABMarketQuotesHabCoinViewController.swift in Sources */,
 				04800FCD257A123C004CFD8D /* HABLoginRegsiterInputView.swift in Sources */,
 				DA801EF9257D445300393E83 /* HABNetworking+Alamofire.swift in Sources */,
 				DA7C053D25767D13009BFFFC /* HABMeetDetailView.swift in Sources */,
+				DA553E91257E88B000688065 /* HABBaseTabBarController.swift in Sources */,
+				DA553F16257E9C2B00688065 /* UIImage+Extension.swift in Sources */,
 				0424AC132577410000B769C9 /* HABMeetDetailMeetContentView.swift in Sources */,
-				DA7C04F4257678E8009BFFFC /* ViewController.swift in Sources */,
+				DA553F07257E98F300688065 /* HABContractViewController.swift in Sources */,
 				DA7C053525767CC6009BFFFC /* HABMeetDetailViewController.swift in Sources */,
 				DA7C056225769EBB009BFFFC /* HABMeetDetailHorizenSliderView.swift in Sources */,
 				DA7C04F0257678E8009BFFFC /* AppDelegate.swift in Sources */,
+				DA553F32257E9F5C00688065 /* HABBaseNavigationController.swift in Sources */,
 				04800FC8257A1185004CFD8D /* HABRegisterViewController.swift in Sources */,
+				DA553ED9257E961000688065 /* HABTransactionHabCoinViewController.swift in Sources */,
 				DA7C04F2257678E8009BFFFC /* SceneDelegate.swift in Sources */,
+				DA553EE8257E965600688065 /* SellHabCoinViewController.swift in Sources */,
 				DA801EFE257D47F300393E83 /* HABMeetDetailViewModel.swift in Sources */,
 				DA7C04FA257678E8009BFFFC /* CommonChatPhone.xcdatamodeld in Sources */,
+				DA553EA4257E8D1900688065 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -777,6 +1198,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WSJK7MN7ZH;
 				INFOPLIST_FILE = CommonChatPhone/Info.plist;
@@ -787,6 +1209,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dulpyhb.CommonChatPhone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CommonChatPhone/CommonChatPhone-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -798,6 +1222,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WSJK7MN7ZH;
 				INFOPLIST_FILE = CommonChatPhone/Info.plist;
@@ -808,6 +1233,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dulpyhb.CommonChatPhone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CommonChatPhone/CommonChatPhone-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
