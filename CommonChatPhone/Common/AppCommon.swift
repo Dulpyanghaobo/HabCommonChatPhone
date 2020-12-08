@@ -7,10 +7,44 @@
 
 import UIKit
 
-
+//全屏大小
 public let kScreen = UIScreen.main.bounds
+
+//全屏宽
 public let kScreenW = UIScreen.main.bounds.size.width
+
+//全屏高
 public let kScreenH = UIScreen.main.bounds.size.height
+
+//导航栏高度
+public let statusBarHeight = UIApplication.shared.statusBarFrame.height
+
+//navigationBar高度
+//public let navigationBarHeight = UIScene.na
+
+
+//底部TabBar的距离
+//public let
+
+
+
+// MARK: -动画执行时间
+let kDuration : TimeInterval = 3.0
+
+// MARK: -网络请求
+//demo环境下网络请求
+//public let DEMODEVNETWORKING =
+//本地环境下网络请求
+public let LOCALHOST = "http://127.0.0.1"
+
+//常用端口号在8000-8080之间
+public let LOCALHOSTNETWORKING8000 = "http://127.0.0.1:8000"
+
+
+
+//线上网络请求
+
+
 // MARK:- 偏好设置存储
 /// 应用是否首次启动
 public let kAppLaunchUserDefaultsKey = "kAppLaunchUserDefaultsKey"

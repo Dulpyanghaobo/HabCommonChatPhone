@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0424AC132577410000B769C9 /* HABMeetDetailMeetContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0424AC12257740FF00B769C9 /* HABMeetDetailMeetContentView.swift */; };
+		043FE70E257F1546000B7C49 /* HABUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043FE70D257F1546000B7C49 /* HABUserInfo.swift */; };
+		043FE723257F1843000B7C49 /* HABUserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043FE722257F1843000B7C49 /* HABUserManager.swift */; };
+		043FE746257F1E0C000B7C49 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043FE745257F1E0C000B7C49 /* String+Extension.swift */; };
 		04800FC3257A1173004CFD8D /* HABLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04800FC2257A1173004CFD8D /* HABLoginController.swift */; };
 		04800FC8257A1185004CFD8D /* HABRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04800FC7257A1185004CFD8D /* HABRegisterViewController.swift */; };
 		04800FCD257A123C004CFD8D /* HABLoginRegsiterInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04800FCC257A123C004CFD8D /* HABLoginRegsiterInputView.swift */; };
@@ -69,6 +72,9 @@
 
 /* Begin PBXFileReference section */
 		0424AC12257740FF00B769C9 /* HABMeetDetailMeetContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABMeetDetailMeetContentView.swift; sourceTree = "<group>"; };
+		043FE70D257F1546000B7C49 /* HABUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABUserInfo.swift; sourceTree = "<group>"; };
+		043FE722257F1843000B7C49 /* HABUserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABUserManager.swift; sourceTree = "<group>"; };
+		043FE745257F1E0C000B7C49 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		04800FC2257A1173004CFD8D /* HABLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABLoginController.swift; sourceTree = "<group>"; };
 		04800FC7257A1185004CFD8D /* HABRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABRegisterViewController.swift; sourceTree = "<group>"; };
 		04800FCC257A123C004CFD8D /* HABLoginRegsiterInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABLoginRegsiterInputView.swift; sourceTree = "<group>"; };
@@ -153,6 +159,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		043FE70C257F1535000B7C49 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				043FE70D257F1546000B7C49 /* HABUserInfo.swift */,
+				043FE722257F1843000B7C49 /* HABUserManager.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		043FE744257F1DFE000B7C49 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				043FE745257F1E0C000B7C49 /* String+Extension.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
 		04800FBB257A1104004CFD8D /* UserDetail */ = {
 			isa = PBXGroup;
 			children = (
@@ -553,6 +576,7 @@
 		DA553F28257E9E1200688065 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				043FE70C257F1535000B7C49 /* Cache */,
 				DA553F31257E9F5C00688065 /* HABBaseNavigationController.swift */,
 				DA553F29257E9E2900688065 /* AppCommon.swift */,
 			);
@@ -728,6 +752,7 @@
 		DA801EDD257D38CD00393E83 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				043FE744257F1DFE000B7C49 /* String */,
 				DA553F14257E9C0700688065 /* UIImage */,
 				DA553EA2257E8D0100688065 /* UIColor */,
 				DA801EE4257D3AE900393E83 /* Networking */,
@@ -991,6 +1016,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				043FE723257F1843000B7C49 /* HABUserManager.swift in Sources */,
 				DA801EE0257D38F600393E83 /* HABNetworking.swift in Sources */,
 				DA553EA9257E8DF600688065 /* UIColor+Common.swift in Sources */,
 				DA553EC0257E941A00688065 /* BuyHabCoinViewController.swift in Sources */,
@@ -998,6 +1024,7 @@
 				DA553F2A257E9E2900688065 /* AppCommon.swift in Sources */,
 				DA553F00257E987F00688065 /* HABMeetingViewController.swift in Sources */,
 				DA553E86257E85B500688065 /* HABMainDataController.swift in Sources */,
+				043FE746257F1E0C000B7C49 /* String+Extension.swift in Sources */,
 				DA553EB8257E93D500688065 /* HABMyHaoBoViewController.swift in Sources */,
 				DA7C056D2576B7E4009BFFFC /* HabMeetDetailTimeItems.swift in Sources */,
 				DA7C05682576B583009BFFFC /* HabMeetDetailRowsHorizenCell.swift in Sources */,
@@ -1010,6 +1037,7 @@
 				DA553E91257E88B000688065 /* HABBaseTabBarController.swift in Sources */,
 				DA553F16257E9C2B00688065 /* UIImage+Extension.swift in Sources */,
 				0424AC132577410000B769C9 /* HABMeetDetailMeetContentView.swift in Sources */,
+				043FE70E257F1546000B7C49 /* HABUserInfo.swift in Sources */,
 				DA553F07257E98F300688065 /* HABContractViewController.swift in Sources */,
 				DA7C053525767CC6009BFFFC /* HABMeetDetailViewController.swift in Sources */,
 				DA7C056225769EBB009BFFFC /* HABMeetDetailHorizenSliderView.swift in Sources */,

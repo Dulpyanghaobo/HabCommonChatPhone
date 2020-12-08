@@ -7,13 +7,17 @@ target 'CommonChatPhone' do
 
   pod 'SnapKit'
   pod 'Alamofire', '~> 5.2'
+  pod 'Moya'
   pod 'SwiftyJSON'
   pod 'SwiftTheme'
   pod 'HABFlowKit'
+  pod 'KakaJSON'
+  pod 'CryptoSwift'
   pod 'SSZipArchive' #Zip解压
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
   target 'CommonChatPhoneTests' do
     inherit! :search_paths
-    # Pods for testing
   end
 
   target 'CommonChatPhoneUITests' do

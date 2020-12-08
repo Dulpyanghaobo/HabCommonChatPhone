@@ -48,9 +48,6 @@ class HABLoginRegsiterInputView: UIView {
         if callBack != nil {
             callBack!(email,password)
         }
-//        let vc = HABMeetDetailViewController()
-//        vc.view.backgroundColor = .white
-//        navigationController?.pushViewController(vc, animated: true)
     }
     func P_setUpUI() {
         addSubview(emailTextField!)
@@ -80,27 +77,6 @@ class HABLoginRegsiterInputView: UIView {
                                 make.right.equalToSuperview().offset(-50)
                                 make.height.equalTo(60)
         }
-//        emailField.snp.makeConstraints{(make) in
-//                    make.top.equalTo(imageView.snp.bottom).offset(20)
-//                    make.centerX.equalTo(view)
-//                    make.left.equalTo(view).offset(30)
-//                    make.right.equalTo(view).offset(-30)
-//                    make.height.equalTo(60)
-//                }
-//                passwordFiled.snp.makeConstraints{(make) in
-//                    make.centerX.equalToSuperview()
-//                    make.top.equalTo(emailField.snp.bottom).offset(10)
-//                    make.left.equalToSuperview().offset(30)
-//                    make.right.equalToSuperview().offset(-30)
-//                    make.height.equalTo(60)
-//                }
-//                loginButton.snp.makeConstraints{(make) in
-//                    make.centerX.equalToSuperview()
-//                    make.top.equalTo(passwordFiled.snp.bottom).offset(30)
-//                    make.left.equalToSuperview().offset(50)
-//                    make.right.equalToSuperview().offset(-50)
-//                    make.height.equalTo(60)
-//                }
     }
     func createTextField(placeholder: String) -> UITextField {
         let textField = UITextField()

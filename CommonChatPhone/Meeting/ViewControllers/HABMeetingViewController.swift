@@ -8,6 +8,10 @@
 import UIKit
 @available(iOS 13.0, *)
 class HABMeetingViewController: UIViewController,HideNavigationBarProtocol {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .hexColor_FFFFFF()
