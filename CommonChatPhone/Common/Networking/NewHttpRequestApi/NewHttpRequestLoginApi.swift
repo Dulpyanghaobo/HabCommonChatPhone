@@ -26,7 +26,7 @@ extension LoginMoyaApi : TargetType {
     var method: Moya.Method {
         switch self {
         case .auth:
-            return .post
+            return .get
         }
     }
     

@@ -8,7 +8,7 @@
 import UIKit
 import KakaJSON
 
-class HABUserInfo: Convertible {
+class HABUserInfo: Convertible,Codable {
     var id : Int?
     var name : String = ""
     var fromLp : Bool = false//是否是老用户

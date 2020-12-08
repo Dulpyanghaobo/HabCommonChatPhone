@@ -10,7 +10,7 @@ import Alamofire
 import SwiftyJSON
 import Moya
 import NSObject_Rx
-
+import KakaJSON
 
 @available(iOS 13.0, *)
 class HABLoginController: UIViewController,HideNavigationBarProtocol{
@@ -27,57 +27,6 @@ class HABLoginController: UIViewController,HideNavigationBarProtocol{
         button.addTarget(self, action: #selector(didTapLogin), for: .touchUpInside)
         return button
     } ()
-    
-    
-    private let headView : HABLoginRegsiterInputView = {
-        let headView = HABLoginRegsiterInputView()
-        headView.callBackBlock { (email,password) in
-            var tokenStr : String = ""
-            var login = Login(username: email, password: password, token: tokenStr)
-            
-//            AF.request("http://127.0.0.1:8000/auth?username=\(email)&password=\(password)",method: .get,parameters: nil).responseJSON { (response) in
-//                switch response.result {
-//                case .success(let value):
-//                    if let responseJSON = value as? [String: Any] {
-//                        let tokenDic = responseJSON["data"] as? Dictionary<String,Any>
-//                        if let token = tokenDic!["token"] as? String{
-//                            login.token = token
-//                            HABUserManager.shared.userInfo?.email = email
-//                            HABUserManager.shared.userInfo?.password = password
-//                            HABUserManager.shared.userInfo?.token = token
-//                            print(login)
-//                            //                            AF.request("\(NetworkInEnvHostApiV1)/articles?token=\(login.token)",method: .get,parameters: nil).responseJSON { (response) in
-//                            //                                switch response.result {
-//                            //                                case .success(let value):
-//                            //                                    if let responseData = value as? [String : Any] {
-//                            //                                        print("\(responseData)")
-//                            //                                        let dataDic = responseData["data"] as? Dictionary<String,Any>
-//                            //                                        if let lists = dataDic!["lists"] as? NSArray {
-//                            //                                            for list in lists {
-//                            //                                                let articlies = JSON(list)
-//                            //                                                let model = Articles.init(jsonData: articlies)
-//                            //                                                let meetDetailViewModel = HABMeetDetailViewModel(user: login, articles: model)
-//                            //                                                let meetDetailVC = HABMeetDetailViewController()
-//                            //                                                meetDetailVC.viewModel = meetDetailViewModel
-//                            //
-//                            //                                            }
-//                            //
-//                            //                                        }
-//                            //
-//                            //                                    }
-//                            //                                case .failure(let error): break
-//                            //                                }
-//                            //                            }
-//                        }
-//                    }
-//                case .failure(let error): break
-//                }
-//            }
-            
-        }
-        return headView
-        
-    }()
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.hexColor_FFFFFF()
@@ -135,12 +84,22 @@ class HABLoginController: UIViewController,HideNavigationBarProtocol{
             return alertUserLoginError()
         }
         let authlogin = MultiTarget(LoginMoyaApi.auth(email, password))
-        HttpRequestManager.rxRequest(authlogin,type: Login.self ).subscribe(onSuccess: {(list) in
-            print("\(list)")
-        }) { (Error) in
-        
+//        HttpRequestManager.rxRequest(authlogin,type: LoginData.self ).subscribe(onSuccess: {(list) in
+//        }) { (Error) in
+//            print(Error)
+//        }.disposed(by: rx.disposeBag)
+        HttpRequestManager.rxRequestResponse(authlogin).subscribe { (list) in
+//            print("\(list)")
+            let data = list["data"]
+            HABUserManager.shared.cacheUserInfo(data.dictionaryValue)
+            if (HABUserManager.shared.userInfo?.token.isEmpty == false) {
+                self.navigationController?.popViewController(animated: true)
+            }
+        } onError: { (Error) in
+            print("\(Error)")
         }.disposed(by: rx.disposeBag)
-        
+
+
     }
     func alertUserLoginError () {
         

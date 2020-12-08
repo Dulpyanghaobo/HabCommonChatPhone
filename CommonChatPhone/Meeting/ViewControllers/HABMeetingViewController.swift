@@ -10,7 +10,10 @@ import UIKit
 class HABMeetingViewController: UIViewController,HideNavigationBarProtocol {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-
+        if (HABUserManager.shared.userInfo?.token.isEmpty == true) {
+            let login = HABLoginController()
+            self.navigationController?.pushViewController(login, animated: true)
+        }
     }
     override func viewDidLoad() {
         super.viewDidLoad()

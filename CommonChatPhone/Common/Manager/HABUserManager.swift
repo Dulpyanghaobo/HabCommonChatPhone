@@ -19,6 +19,7 @@ class HABUserManager: NSObject {
     
 //    是否设置支付密码
     var isPaySeted: Bool = false
+    
 //    缓存用户信息
     func cacheUserInfo(_ userInfo:[String: Any]?) {
         guard !((userInfo?.isEmpty)!) else {

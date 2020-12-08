@@ -34,17 +34,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func sceneWillEnterForeground(_ scene: UIScene) {
         guard let _ = (scene as? UIWindowScene) else { return }
-        if (HABUserManager.shared.userInfo?.token.isEmpty == true) {
-            let login = HABLoginController()
-            let navigationVC = HABBaseNavigationController(rootViewController: login)
-            window?.rootViewController = navigationVC
-            window?.makeKeyAndVisible()
-        } else {
-            let tabBarVc = HABBaseTabBarController()
-            window?.rootViewController = tabBarVc
-            window?.makeKeyAndVisible()
-        }
-        
     }
 
     func sceneDidEnterBackground(_ scene: UIScene) {

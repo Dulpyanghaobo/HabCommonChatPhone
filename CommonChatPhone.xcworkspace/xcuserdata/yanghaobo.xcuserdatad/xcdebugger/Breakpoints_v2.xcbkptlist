@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "4DFCAB19-C5CF-4D1E-98A6-035E63E6381D"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D7325B7C-B69B-442F-9B20-23745519A4A7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CommonChatPhone/Common/Networking/NetWorkConfig/HttpRequestManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "HttpRequestManager"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "D7325B7C-B69B-442F-9B20-23745519A4A7 - ff5ff3891db029d6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "globalinit_33_7BD744CBC05AE2ACA1191696F61CFEDF_func2"
+                  moduleName = "CommonChatPhone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yanghaobo/HabCommonChatPhone/CommonChatPhone/Common/Networking/NetWorkConfig/HttpRequestManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "D7325B7C-B69B-442F-9B20-23745519A4A7 - 3838b3de8ccd9d9c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CommonChatPhone.HttpRequestManager.provider.unsafeMutableAddressor : Moya.MoyaProvider&lt;Moya.MultiTarget&gt;"
+                  moduleName = "CommonChatPhone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yanghaobo/HabCommonChatPhone/CommonChatPhone/Common/Networking/NetWorkConfig/HttpRequestManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "8">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
