@@ -14,8 +14,8 @@
             filePath = "CommonChatPhone/Login/ViewControllers/HABLoginController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
             landmarkName = "headView"
             landmarkType = "24">
          </BreakpointContent>
@@ -30,8 +30,8 @@
             filePath = "CommonChatPhone/Login/ViewControllers/HABLoginController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "headView"
             landmarkType = "24">
          </BreakpointContent>

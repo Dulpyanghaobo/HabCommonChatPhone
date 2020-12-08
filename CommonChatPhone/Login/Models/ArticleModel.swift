@@ -9,7 +9,7 @@ import Foundation
 import SwiftyJSON
 
 // 定义模型名称
-struct Login: Encodable {
+struct Login: Codable {
     let username: String
     let password: String
     var token : String

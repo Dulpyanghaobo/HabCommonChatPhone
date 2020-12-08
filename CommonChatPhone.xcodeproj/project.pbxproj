@@ -11,6 +11,17 @@
 		043FE70E257F1546000B7C49 /* HABUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043FE70D257F1546000B7C49 /* HABUserInfo.swift */; };
 		043FE723257F1843000B7C49 /* HABUserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043FE722257F1843000B7C49 /* HABUserManager.swift */; };
 		043FE746257F1E0C000B7C49 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043FE745257F1E0C000B7C49 /* String+Extension.swift */; };
+		043FE770257F3251000B7C49 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 043FE76F257F3251000B7C49 /* GoogleService-Info.plist */; };
+		043FE776257F35FE000B7C49 /* HABHTTPRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043FE775257F35FE000B7C49 /* HABHTTPRequestManager.swift */; };
+		043FE79F257F376A000B7C49 /* HttpRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043FE79E257F376A000B7C49 /* HttpRequestManager.swift */; };
+		043FE80F257F45CB000B7C49 /* HttpApiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043FE80E257F45CB000B7C49 /* HttpApiConfig.swift */; };
+		043FE814257F4701000B7C49 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043FE813257F4701000B7C49 /* ErrorResponse.swift */; };
+		043FE819257F4853000B7C49 /* CustomEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043FE818257F4853000B7C49 /* CustomEncoding.swift */; };
+		043FE844257F4BD7000B7C49 /* HUDAssets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 043FE843257F4BD7000B7C49 /* HUDAssets.bundle */; };
+		043FE849257F4C32000B7C49 /* HABConfiguredHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043FE848257F4C32000B7C49 /* HABConfiguredHUD.swift */; };
+		043FE88B257F4ECC000B7C49 /* UIFont+PingFang.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043FE88A257F4ECC000B7C49 /* UIFont+PingFang.swift */; };
+		043FE897257F5B1A000B7C49 /* NewHttpRequestLoginApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043FE896257F5B1A000B7C49 /* NewHttpRequestLoginApi.swift */; };
+		043FE89C257F618E000B7C49 /* NewHttpMultiTargetApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043FE89B257F618E000B7C49 /* NewHttpMultiTargetApi.swift */; };
 		04800FC3257A1173004CFD8D /* HABLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04800FC2257A1173004CFD8D /* HABLoginController.swift */; };
 		04800FC8257A1185004CFD8D /* HABRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04800FC7257A1185004CFD8D /* HABRegisterViewController.swift */; };
 		04800FCD257A123C004CFD8D /* HABLoginRegsiterInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04800FCC257A123C004CFD8D /* HABLoginRegsiterInputView.swift */; };
@@ -48,7 +59,6 @@
 		DA7C056225769EBB009BFFFC /* HABMeetDetailHorizenSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C056125769EBB009BFFFC /* HABMeetDetailHorizenSliderView.swift */; };
 		DA7C05682576B583009BFFFC /* HabMeetDetailRowsHorizenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C05672576B583009BFFFC /* HabMeetDetailRowsHorizenCell.swift */; };
 		DA7C056D2576B7E4009BFFFC /* HabMeetDetailTimeItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C056C2576B7E4009BFFFC /* HabMeetDetailTimeItems.swift */; };
-		DA801EE0257D38F600393E83 /* HABNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA801EDF257D38F600393E83 /* HABNetworking.swift */; };
 		DA801EF9257D445300393E83 /* HABNetworking+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA801EF8257D445300393E83 /* HABNetworking+Alamofire.swift */; };
 		DA801EFE257D47F300393E83 /* HABMeetDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA801EFD257D47F300393E83 /* HABMeetDetailViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -75,6 +85,17 @@
 		043FE70D257F1546000B7C49 /* HABUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABUserInfo.swift; sourceTree = "<group>"; };
 		043FE722257F1843000B7C49 /* HABUserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABUserManager.swift; sourceTree = "<group>"; };
 		043FE745257F1E0C000B7C49 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		043FE76F257F3251000B7C49 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		043FE775257F35FE000B7C49 /* HABHTTPRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABHTTPRequestManager.swift; sourceTree = "<group>"; };
+		043FE79E257F376A000B7C49 /* HttpRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestManager.swift; sourceTree = "<group>"; };
+		043FE80E257F45CB000B7C49 /* HttpApiConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpApiConfig.swift; sourceTree = "<group>"; };
+		043FE813257F4701000B7C49 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		043FE818257F4853000B7C49 /* CustomEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomEncoding.swift; sourceTree = "<group>"; };
+		043FE843257F4BD7000B7C49 /* HUDAssets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HUDAssets.bundle; sourceTree = "<group>"; };
+		043FE848257F4C32000B7C49 /* HABConfiguredHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABConfiguredHUD.swift; sourceTree = "<group>"; };
+		043FE88A257F4ECC000B7C49 /* UIFont+PingFang.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+PingFang.swift"; sourceTree = "<group>"; };
+		043FE896257F5B1A000B7C49 /* NewHttpRequestLoginApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewHttpRequestLoginApi.swift; sourceTree = "<group>"; };
+		043FE89B257F618E000B7C49 /* NewHttpMultiTargetApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewHttpMultiTargetApi.swift; sourceTree = "<group>"; };
 		04800FC2257A1173004CFD8D /* HABLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABLoginController.swift; sourceTree = "<group>"; };
 		04800FC7257A1185004CFD8D /* HABRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABRegisterViewController.swift; sourceTree = "<group>"; };
 		04800FCC257A123C004CFD8D /* HABLoginRegsiterInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABLoginRegsiterInputView.swift; sourceTree = "<group>"; };
@@ -104,7 +125,6 @@
 		DA70768E257EAB9C008932F6 /* Night.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Night.plist; sourceTree = "<group>"; };
 		DA70768F257EAB9C008932F6 /* AppThemes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppThemes.swift; sourceTree = "<group>"; };
 		DA7076A2257EAC77008932F6 /* CommonChatPhone-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CommonChatPhone-Bridging-Header.h"; sourceTree = "<group>"; };
-		DA7076A3257EAC77008932F6 /* test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
 		DA7C04EC257678E8009BFFFC /* CommonChatPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommonChatPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA7C04EF257678E8009BFFFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA7C04F1257678E8009BFFFC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,7 +144,6 @@
 		DA7C056125769EBB009BFFFC /* HABMeetDetailHorizenSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABMeetDetailHorizenSliderView.swift; sourceTree = "<group>"; };
 		DA7C05672576B583009BFFFC /* HabMeetDetailRowsHorizenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabMeetDetailRowsHorizenCell.swift; sourceTree = "<group>"; };
 		DA7C056C2576B7E4009BFFFC /* HabMeetDetailTimeItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabMeetDetailTimeItems.swift; sourceTree = "<group>"; };
-		DA801EDF257D38F600393E83 /* HABNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABNetworking.swift; sourceTree = "<group>"; };
 		DA801EF8257D445300393E83 /* HABNetworking+Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HABNetworking+Alamofire.swift"; sourceTree = "<group>"; };
 		DA801EFD257D47F300393E83 /* HABMeetDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HABMeetDetailViewModel.swift; path = CommonChatPhone/HABMeetDetailViewModel.swift; sourceTree = SOURCE_ROOT; };
 		EA07F1301B2D8ADCEBB6780E /* Pods-CommonChatPhoneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonChatPhoneTests.debug.xcconfig"; path = "Target Support Files/Pods-CommonChatPhoneTests/Pods-CommonChatPhoneTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -163,7 +182,6 @@
 			isa = PBXGroup;
 			children = (
 				043FE70D257F1546000B7C49 /* HABUserInfo.swift */,
-				043FE722257F1843000B7C49 /* HABUserManager.swift */,
 			);
 			path = Cache;
 			sourceTree = "<group>";
@@ -174,6 +192,61 @@
 				043FE745257F1E0C000B7C49 /* String+Extension.swift */,
 			);
 			path = String;
+			sourceTree = "<group>";
+		};
+		043FE774257F35E2000B7C49 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				043FE722257F1843000B7C49 /* HABUserManager.swift */,
+				043FE775257F35FE000B7C49 /* HABHTTPRequestManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		043FE79C257F370D000B7C49 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				043FE895257F5AF2000B7C49 /* NewHttpRequestApi */,
+				043FE79D257F3719000B7C49 /* NetWorkConfig */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		043FE79D257F3719000B7C49 /* NetWorkConfig */ = {
+			isa = PBXGroup;
+			children = (
+				043FE79E257F376A000B7C49 /* HttpRequestManager.swift */,
+				043FE80E257F45CB000B7C49 /* HttpApiConfig.swift */,
+				043FE813257F4701000B7C49 /* ErrorResponse.swift */,
+				043FE818257F4853000B7C49 /* CustomEncoding.swift */,
+			);
+			path = NetWorkConfig;
+			sourceTree = "<group>";
+		};
+		043FE842257F4B70000B7C49 /* HABConfiguredHUD */ = {
+			isa = PBXGroup;
+			children = (
+				043FE843257F4BD7000B7C49 /* HUDAssets.bundle */,
+				043FE848257F4C32000B7C49 /* HABConfiguredHUD.swift */,
+			);
+			path = HABConfiguredHUD;
+			sourceTree = "<group>";
+		};
+		043FE889257F4EB8000B7C49 /* UIFont */ = {
+			isa = PBXGroup;
+			children = (
+				043FE88A257F4ECC000B7C49 /* UIFont+PingFang.swift */,
+			);
+			path = UIFont;
+			sourceTree = "<group>";
+		};
+		043FE895257F5AF2000B7C49 /* NewHttpRequestApi */ = {
+			isa = PBXGroup;
+			children = (
+				043FE896257F5B1A000B7C49 /* NewHttpRequestLoginApi.swift */,
+				043FE89B257F618E000B7C49 /* NewHttpMultiTargetApi.swift */,
+			);
+			path = NewHttpRequestApi;
 			sourceTree = "<group>";
 		};
 		04800FBB257A1104004CFD8D /* UserDetail */ = {
@@ -576,6 +649,8 @@
 		DA553F28257E9E1200688065 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				043FE79C257F370D000B7C49 /* Networking */,
+				043FE774257F35E2000B7C49 /* Manager */,
 				043FE70C257F1535000B7C49 /* Cache */,
 				DA553F31257E9F5C00688065 /* HABBaseNavigationController.swift */,
 				DA553F29257E9E2900688065 /* AppCommon.swift */,
@@ -586,6 +661,7 @@
 		DA70768A257EAB6C008932F6 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				043FE842257F4B70000B7C49 /* HABConfiguredHUD */,
 				DA70768B257EAB9C008932F6 /* Theme */,
 			);
 			path = Utils;
@@ -634,6 +710,7 @@
 		DA7C04EE257678E8009BFFFC /* CommonChatPhone */ = {
 			isa = PBXGroup;
 			children = (
+				043FE76F257F3251000B7C49 /* GoogleService-Info.plist */,
 				DA70768A257EAB6C008932F6 /* Utils */,
 				DA553F28257E9E1200688065 /* Common */,
 				DA553F04257E98D700688065 /* Contract */,
@@ -655,7 +732,6 @@
 				DA7C04FD257678E9009BFFFC /* LaunchScreen.storyboard */,
 				DA7C0500257678E9009BFFFC /* Info.plist */,
 				DA7C04F8257678E8009BFFFC /* CommonChatPhone.xcdatamodeld */,
-				DA7076A3257EAC77008932F6 /* test.h */,
 				DA7076A2257EAC77008932F6 /* CommonChatPhone-Bridging-Header.h */,
 			);
 			path = CommonChatPhone;
@@ -744,7 +820,6 @@
 		DA801EDC257D38C300393E83 /* Define */ = {
 			isa = PBXGroup;
 			children = (
-				DA801EDF257D38F600393E83 /* HABNetworking.swift */,
 			);
 			path = Define;
 			sourceTree = "<group>";
@@ -752,6 +827,7 @@
 		DA801EDD257D38CD00393E83 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				043FE889257F4EB8000B7C49 /* UIFont */,
 				043FE744257F1DFE000B7C49 /* String */,
 				DA553F14257E9C0700688065 /* UIImage */,
 				DA553EA2257E8D0100688065 /* UIColor */,
@@ -885,10 +961,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA7C04FF257678E9009BFFFC /* LaunchScreen.storyboard in Resources */,
+				043FE770257F3251000B7C49 /* GoogleService-Info.plist in Resources */,
 				DA707691257EAB9C008932F6 /* Night.plist in Resources */,
 				DA707690257EAB9C008932F6 /* Light.plist in Resources */,
 				DA7C04FC257678E9009BFFFC /* Assets.xcassets in Resources */,
 				DA7C04F7257678E8009BFFFC /* Main.storyboard in Resources */,
+				043FE844257F4BD7000B7C49 /* HUDAssets.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1017,20 +1095,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				043FE723257F1843000B7C49 /* HABUserManager.swift in Sources */,
-				DA801EE0257D38F600393E83 /* HABNetworking.swift in Sources */,
 				DA553EA9257E8DF600688065 /* UIColor+Common.swift in Sources */,
 				DA553EC0257E941A00688065 /* BuyHabCoinViewController.swift in Sources */,
 				04AE6199257A3B880085B1FA /* ArticleModel.swift in Sources */,
 				DA553F2A257E9E2900688065 /* AppCommon.swift in Sources */,
+				043FE776257F35FE000B7C49 /* HABHTTPRequestManager.swift in Sources */,
 				DA553F00257E987F00688065 /* HABMeetingViewController.swift in Sources */,
+				043FE897257F5B1A000B7C49 /* NewHttpRequestLoginApi.swift in Sources */,
 				DA553E86257E85B500688065 /* HABMainDataController.swift in Sources */,
 				043FE746257F1E0C000B7C49 /* String+Extension.swift in Sources */,
 				DA553EB8257E93D500688065 /* HABMyHaoBoViewController.swift in Sources */,
+				043FE849257F4C32000B7C49 /* HABConfiguredHUD.swift in Sources */,
 				DA7C056D2576B7E4009BFFFC /* HabMeetDetailTimeItems.swift in Sources */,
 				DA7C05682576B583009BFFFC /* HabMeetDetailRowsHorizenCell.swift in Sources */,
 				04800FC3257A1173004CFD8D /* HABLoginController.swift in Sources */,
 				DA707692257EAB9C008932F6 /* AppThemes.swift in Sources */,
+				043FE89C257F618E000B7C49 /* NewHttpMultiTargetApi.swift in Sources */,
 				DA553EF2257E972700688065 /* HABMarketQuotesHabCoinViewController.swift in Sources */,
+				043FE80F257F45CB000B7C49 /* HttpApiConfig.swift in Sources */,
 				04800FCD257A123C004CFD8D /* HABLoginRegsiterInputView.swift in Sources */,
 				DA801EF9257D445300393E83 /* HABNetworking+Alamofire.swift in Sources */,
 				DA7C053D25767D13009BFFFC /* HABMeetDetailView.swift in Sources */,
@@ -1038,16 +1120,20 @@
 				DA553F16257E9C2B00688065 /* UIImage+Extension.swift in Sources */,
 				0424AC132577410000B769C9 /* HABMeetDetailMeetContentView.swift in Sources */,
 				043FE70E257F1546000B7C49 /* HABUserInfo.swift in Sources */,
+				043FE79F257F376A000B7C49 /* HttpRequestManager.swift in Sources */,
 				DA553F07257E98F300688065 /* HABContractViewController.swift in Sources */,
 				DA7C053525767CC6009BFFFC /* HABMeetDetailViewController.swift in Sources */,
 				DA7C056225769EBB009BFFFC /* HABMeetDetailHorizenSliderView.swift in Sources */,
 				DA7C04F0257678E8009BFFFC /* AppDelegate.swift in Sources */,
+				043FE88B257F4ECC000B7C49 /* UIFont+PingFang.swift in Sources */,
 				DA553F32257E9F5C00688065 /* HABBaseNavigationController.swift in Sources */,
 				04800FC8257A1185004CFD8D /* HABRegisterViewController.swift in Sources */,
 				DA553ED9257E961000688065 /* HABTransactionHabCoinViewController.swift in Sources */,
+				043FE819257F4853000B7C49 /* CustomEncoding.swift in Sources */,
 				DA7C04F2257678E8009BFFFC /* SceneDelegate.swift in Sources */,
 				DA553EE8257E965600688065 /* SellHabCoinViewController.swift in Sources */,
 				DA801EFE257D47F300393E83 /* HABMeetDetailViewModel.swift in Sources */,
+				043FE814257F4701000B7C49 /* ErrorResponse.swift in Sources */,
 				DA7C04FA257678E8009BFFFC /* CommonChatPhone.xcdatamodeld in Sources */,
 				DA553EA4257E8D1900688065 /* UIColor+Extension.swift in Sources */,
 			);
