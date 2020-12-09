@@ -29,6 +29,13 @@
 		7597C5654DF9FFA6D0C1A0D4 /* Pods_CommonChatPhone_CommonChatPhoneUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F631D30BE26A46EA674ECE1C /* Pods_CommonChatPhone_CommonChatPhoneUITests.framework */; };
 		872A8C20F6102ADDE1622A89 /* Pods_CommonChatPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC6492803ABA754A61126FA1 /* Pods_CommonChatPhone.framework */; };
 		8E95CF7C127863349277F43B /* Pods_CommonChatPhoneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 575B0FF3484DDBD8EE7C1E21 /* Pods_CommonChatPhoneTests.framework */; };
+		DA42D443258107DC00F4CDDC /* HABMainNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA42D442258107DC00F4CDDC /* HABMainNavViewController.swift */; };
+		DA42D47425810CE500F4CDDC /* MainNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA42D47325810CE500F4CDDC /* MainNavView.swift */; };
+		DA42D47925811CBD00F4CDDC /* String+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA42D47825811CBD00F4CDDC /* String+Frame.swift */; };
+		DA42D48B258127BE00F4CDDC /* HABHelpPamphletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA42D48A258127BE00F4CDDC /* HABHelpPamphletViewController.swift */; };
+		DA42D494258128B900F4CDDC /* HABMainImageLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA42D493258128B900F4CDDC /* HABMainImageLabelView.swift */; };
+		DA42D49A25812A4400F4CDDC /* HABCoreImageLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA42D49925812A4400F4CDDC /* HABCoreImageLabelCell.swift */; };
+		DA42D4A425812DBC00F4CDDC /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA42D4A325812DBC00F4CDDC /* UIButton+Extension.swift */; };
 		DA553E86257E85B500688065 /* HABMainDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA553E85257E85B500688065 /* HABMainDataController.swift */; };
 		DA553E91257E88B000688065 /* HABBaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA553E90257E88B000688065 /* HABBaseTabBarController.swift */; };
 		DA553EA4257E8D1900688065 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA553EA3257E8D1900688065 /* UIColor+Extension.swift */; };
@@ -38,7 +45,7 @@
 		DA553ED9257E961000688065 /* HABTransactionHabCoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA553ED7257E961000688065 /* HABTransactionHabCoinViewController.swift */; };
 		DA553EE8257E965600688065 /* SellHabCoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA553EE7257E965600688065 /* SellHabCoinViewController.swift */; };
 		DA553EF2257E972700688065 /* HABMarketQuotesHabCoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA553EEE257E972700688065 /* HABMarketQuotesHabCoinViewController.swift */; };
-		DA553F00257E987F00688065 /* HABMeetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA553EFF257E987F00688065 /* HABMeetingViewController.swift */; };
+		DA553F00257E987F00688065 /* HABMarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA553EFF257E987F00688065 /* HABMarketViewController.swift */; };
 		DA553F07257E98F300688065 /* HABContractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA553F06257E98F300688065 /* HABContractViewController.swift */; };
 		DA553F16257E9C2B00688065 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA553F15257E9C2B00688065 /* UIImage+Extension.swift */; };
 		DA553F2A257E9E2900688065 /* AppCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA553F29257E9E2900688065 /* AppCommon.swift */; };
@@ -107,6 +114,13 @@
 		B6EF7AFFE8447DBB3E972C8C /* Pods-CommonChatPhone-CommonChatPhoneUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonChatPhone-CommonChatPhoneUITests.debug.xcconfig"; path = "Target Support Files/Pods-CommonChatPhone-CommonChatPhoneUITests/Pods-CommonChatPhone-CommonChatPhoneUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BC6492803ABA754A61126FA1 /* Pods_CommonChatPhone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonChatPhone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C167ACF5A8D2077FDE45113E /* Pods-CommonChatPhone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonChatPhone.release.xcconfig"; path = "Target Support Files/Pods-CommonChatPhone/Pods-CommonChatPhone.release.xcconfig"; sourceTree = "<group>"; };
+		DA42D442258107DC00F4CDDC /* HABMainNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABMainNavViewController.swift; sourceTree = "<group>"; };
+		DA42D47325810CE500F4CDDC /* MainNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavView.swift; sourceTree = "<group>"; };
+		DA42D47825811CBD00F4CDDC /* String+Frame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Frame.swift"; sourceTree = "<group>"; };
+		DA42D48A258127BE00F4CDDC /* HABHelpPamphletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABHelpPamphletViewController.swift; sourceTree = "<group>"; };
+		DA42D493258128B900F4CDDC /* HABMainImageLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABMainImageLabelView.swift; sourceTree = "<group>"; };
+		DA42D49925812A4400F4CDDC /* HABCoreImageLabelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABCoreImageLabelCell.swift; sourceTree = "<group>"; };
+		DA42D4A325812DBC00F4CDDC /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		DA553E85257E85B500688065 /* HABMainDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABMainDataController.swift; sourceTree = "<group>"; };
 		DA553E90257E88B000688065 /* HABBaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABBaseTabBarController.swift; sourceTree = "<group>"; };
 		DA553EA3257E8D1900688065 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
@@ -116,7 +130,7 @@
 		DA553ED7257E961000688065 /* HABTransactionHabCoinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HABTransactionHabCoinViewController.swift; sourceTree = "<group>"; };
 		DA553EE7257E965600688065 /* SellHabCoinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellHabCoinViewController.swift; sourceTree = "<group>"; };
 		DA553EEE257E972700688065 /* HABMarketQuotesHabCoinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HABMarketQuotesHabCoinViewController.swift; sourceTree = "<group>"; };
-		DA553EFF257E987F00688065 /* HABMeetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABMeetingViewController.swift; sourceTree = "<group>"; };
+		DA553EFF257E987F00688065 /* HABMarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABMarketViewController.swift; sourceTree = "<group>"; };
 		DA553F06257E98F300688065 /* HABContractViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABContractViewController.swift; sourceTree = "<group>"; };
 		DA553F15257E9C2B00688065 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		DA553F29257E9E2900688065 /* AppCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCommon.swift; sourceTree = "<group>"; };
@@ -190,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				043FE745257F1E0C000B7C49 /* String+Extension.swift */,
+				DA42D47825811CBD00F4CDDC /* String+Frame.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -320,6 +335,118 @@
 				B4989EB374BB472C51205FC2 /* Pods-CommonChatPhoneTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		DA42D47225810CC300F4CDDC /* NavView */ = {
+			isa = PBXGroup;
+			children = (
+				DA42D47325810CE500F4CDDC /* MainNavView.swift */,
+			);
+			path = NavView;
+			sourceTree = "<group>";
+		};
+		DA42D47D2581226400F4CDDC /* AIInvest */ = {
+			isa = PBXGroup;
+			children = (
+				DA42D4812581229800F4CDDC /* Models */,
+				DA42D4802581229100F4CDDC /* ViewController */,
+				DA42D47F2581228D00F4CDDC /* View */,
+				DA42D47E2581228700F4CDDC /* ViewModel */,
+			);
+			path = AIInvest;
+			sourceTree = "<group>";
+		};
+		DA42D47E2581228700F4CDDC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DA42D47F2581228D00F4CDDC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DA42D4802581229100F4CDDC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DA42D4812581229800F4CDDC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DA42D4852581271A00F4CDDC /* HelpPamphlet */ = {
+			isa = PBXGroup;
+			children = (
+				DA42D4892581275B00F4CDDC /* Views */,
+				DA42D4882581275600F4CDDC /* ViewModels */,
+				DA42D4872581275100F4CDDC /* Models */,
+				DA42D4862581274B00F4CDDC /* ViewController */,
+			);
+			path = HelpPamphlet;
+			sourceTree = "<group>";
+		};
+		DA42D4862581274B00F4CDDC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DA42D48A258127BE00F4CDDC /* HABHelpPamphletViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DA42D4872581275100F4CDDC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DA42D4882581275600F4CDDC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DA42D4892581275B00F4CDDC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DA42D4922581284500F4CDDC /* MainCoreView */ = {
+			isa = PBXGroup;
+			children = (
+				DA42D49825812A2600F4CDDC /* SubView */,
+				DA42D493258128B900F4CDDC /* HABMainImageLabelView.swift */,
+			);
+			path = MainCoreView;
+			sourceTree = "<group>";
+		};
+		DA42D49825812A2600F4CDDC /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+				DA42D49925812A4400F4CDDC /* HABCoreImageLabelCell.swift */,
+			);
+			path = SubView;
+			sourceTree = "<group>";
+		};
+		DA42D4A125812D8900F4CDDC /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				DA42D4A325812DBC00F4CDDC /* UIButton+Extension.swift */,
+			);
+			path = Button;
 			sourceTree = "<group>";
 		};
 		DA553E77257E802700688065 /* AppDelegate */ = {
@@ -582,7 +709,7 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		DA553EF9257E983500688065 /* Meeting */ = {
+		DA553EF9257E983500688065 /* Market */ = {
 			isa = PBXGroup;
 			children = (
 				DA553EFE257E987100688065 /* Models */,
@@ -590,7 +717,7 @@
 				DA553EFB257E985F00688065 /* Views */,
 				DA553EFA257E985A00688065 /* ViewModels */,
 			);
-			path = Meeting;
+			path = Market;
 			sourceTree = "<group>";
 		};
 		DA553EFA257E985A00688065 /* ViewModels */ = {
@@ -603,6 +730,8 @@
 		DA553EFB257E985F00688065 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DA42D4922581284500F4CDDC /* MainCoreView */,
+				DA42D47225810CC300F4CDDC /* NavView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -610,7 +739,8 @@
 		DA553EFC257E986400688065 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				DA553EFF257E987F00688065 /* HABMeetingViewController.swift */,
+				DA553EFF257E987F00688065 /* HABMarketViewController.swift */,
+				DA42D442258107DC00F4CDDC /* HABMainNavViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -710,11 +840,13 @@
 		DA7C04EE257678E8009BFFFC /* CommonChatPhone */ = {
 			isa = PBXGroup;
 			children = (
+				DA42D4852581271A00F4CDDC /* HelpPamphlet */,
+				DA42D47D2581226400F4CDDC /* AIInvest */,
 				043FE76F257F3251000B7C49 /* GoogleService-Info.plist */,
 				DA70768A257EAB6C008932F6 /* Utils */,
 				DA553F28257E9E1200688065 /* Common */,
 				DA553F04257E98D700688065 /* Contract */,
-				DA553EF9257E983500688065 /* Meeting */,
+				DA553EF9257E983500688065 /* Market */,
 				DA553EEC257E96C900688065 /* MarketQuotes */,
 				DA553ED3257E955B00688065 /* Transaction */,
 				DA553EAD257E931C00688065 /* UserCenter */,
@@ -827,6 +959,7 @@
 		DA801EDD257D38CD00393E83 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				DA42D4A125812D8900F4CDDC /* Button */,
 				043FE889257F4EB8000B7C49 /* UIFont */,
 				043FE744257F1DFE000B7C49 /* String */,
 				DA553F14257E9C0700688065 /* UIImage */,
@@ -1100,16 +1233,19 @@
 				04AE6199257A3B880085B1FA /* ArticleModel.swift in Sources */,
 				DA553F2A257E9E2900688065 /* AppCommon.swift in Sources */,
 				043FE776257F35FE000B7C49 /* HABHTTPRequestManager.swift in Sources */,
-				DA553F00257E987F00688065 /* HABMeetingViewController.swift in Sources */,
+				DA553F00257E987F00688065 /* HABMarketViewController.swift in Sources */,
+				DA42D443258107DC00F4CDDC /* HABMainNavViewController.swift in Sources */,
 				043FE897257F5B1A000B7C49 /* NewHttpRequestLoginApi.swift in Sources */,
 				DA553E86257E85B500688065 /* HABMainDataController.swift in Sources */,
 				043FE746257F1E0C000B7C49 /* String+Extension.swift in Sources */,
 				DA553EB8257E93D500688065 /* HABMyHaoBoViewController.swift in Sources */,
 				043FE849257F4C32000B7C49 /* HABConfiguredHUD.swift in Sources */,
 				DA7C056D2576B7E4009BFFFC /* HabMeetDetailTimeItems.swift in Sources */,
+				DA42D494258128B900F4CDDC /* HABMainImageLabelView.swift in Sources */,
 				DA7C05682576B583009BFFFC /* HabMeetDetailRowsHorizenCell.swift in Sources */,
 				04800FC3257A1173004CFD8D /* HABLoginController.swift in Sources */,
 				DA707692257EAB9C008932F6 /* AppThemes.swift in Sources */,
+				DA42D47425810CE500F4CDDC /* MainNavView.swift in Sources */,
 				043FE89C257F618E000B7C49 /* NewHttpMultiTargetApi.swift in Sources */,
 				DA553EF2257E972700688065 /* HABMarketQuotesHabCoinViewController.swift in Sources */,
 				043FE80F257F45CB000B7C49 /* HttpApiConfig.swift in Sources */,
@@ -1131,9 +1267,13 @@
 				DA553ED9257E961000688065 /* HABTransactionHabCoinViewController.swift in Sources */,
 				043FE819257F4853000B7C49 /* CustomEncoding.swift in Sources */,
 				DA7C04F2257678E8009BFFFC /* SceneDelegate.swift in Sources */,
+				DA42D47925811CBD00F4CDDC /* String+Frame.swift in Sources */,
+				DA42D4A425812DBC00F4CDDC /* UIButton+Extension.swift in Sources */,
 				DA553EE8257E965600688065 /* SellHabCoinViewController.swift in Sources */,
 				DA801EFE257D47F300393E83 /* HABMeetDetailViewModel.swift in Sources */,
+				DA42D48B258127BE00F4CDDC /* HABHelpPamphletViewController.swift in Sources */,
 				043FE814257F4701000B7C49 /* ErrorResponse.swift in Sources */,
+				DA42D49A25812A4400F4CDDC /* HABCoreImageLabelCell.swift in Sources */,
 				DA7C04FA257678E8009BFFFC /* CommonChatPhone.xcdatamodeld in Sources */,
 				DA553EA4257E8D1900688065 /* UIColor+Extension.swift in Sources */,
 			);

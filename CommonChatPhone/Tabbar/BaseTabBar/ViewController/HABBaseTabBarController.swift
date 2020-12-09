@@ -10,7 +10,7 @@ import SwiftTheme
 
 @available(iOS 13.0, *)
 class HABBaseTabBarController: UITabBarController {
-    
+    private var lastSelectNav = HABBaseNavigationController()
     
 //    MARK: -生命周期
     private var indexFlag : Int = 0
@@ -19,6 +19,7 @@ class HABBaseTabBarController: UITabBarController {
         initializes()
         p_setUpUI()
         setupChildVC()
+        self.delegate = self;
     }
     private func initializes() {
         let tabBar = UITabBar.appearance()
@@ -48,7 +49,7 @@ class HABBaseTabBarController: UITabBarController {
     //    MARK: - 创建子tabBar
     private func setupChildVC() {
 //        首页
-        let meetingVC = HABMeetingViewController()
+        let meetingVC = HABMarketViewController()
 //        交易
         let transactionVC = HABTransactionHabCoinViewController()
 //        契约
@@ -57,10 +58,10 @@ class HABBaseTabBarController: UITabBarController {
         let userCenter = HABMyHaoBoViewController()
         
         
-        createChildController(meetingVC, title: "行情", image: UIImage.init(systemName: "waveform.path.ecg.rectangle"), selectedImage: UIImage.init(systemName: "waveform.path.ecg.rectangle.fill"))
+        createChildController(meetingVC, title: "市场", image: UIImage.init(systemName: "waveform.path.ecg.rectangle"), selectedImage: UIImage.init(systemName: "waveform.path.ecg.rectangle.fill"))
         createChildController(transactionVC, title: "交易", image: UIImage.init(systemName: "lifepreserver"), selectedImage:UIImage.init(systemName: "lifepreserver.fill"))
         createChildController(contractVC, title: "契约", image: UIImage.init(systemName: "flame"), selectedImage: UIImage.init(systemName: "flame.fill"))
-        createChildController(userCenter, title: "我的", image: UIImage.init(systemName: "person.circle"), selectedImage: UIImage.init(systemName: "person.circle.fill"))
+        createChildController(userCenter, title: "资产", image: UIImage.init(systemName: "person.circle"), selectedImage: UIImage.init(systemName: "person.circle.fill"))
     }
     /// 为tababr点击添加动画
     /// - Parameters:
@@ -74,10 +75,14 @@ class HABBaseTabBarController: UITabBarController {
                 
                 animateWithIndex(index: index)
             }
+            
         }
+        
     }
+    
 
 }
+
 
 @available(iOS 13.0, *)
 extension HABBaseTabBarController {
@@ -118,3 +123,10 @@ extension HABBaseTabBarController {
         indexFlag = index
     }
 }
+@available(iOS 13.0, *)
+extension HABBaseTabBarController : UITabBarControllerDelegate {
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        
+    }
+}
+

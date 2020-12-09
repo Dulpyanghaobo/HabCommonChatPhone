@@ -7,6 +7,8 @@
 
 import UIKit
 
+
+//    MARK: -屏幕
 //全屏大小
 public let kScreen = UIScreen.main.bounds
 
@@ -23,10 +25,13 @@ public let statusBarHeight = UIApplication.shared.statusBarFrame.height
 public let navigationBarHeight = statusBarHeight + 44
 
 
-//底部TabBar的距离
+//全屏显示五个cell的cell宽
+public let fiveCellWidth = kScreenW / 5
 //public let
 
 
+//    MARK: - 回调
+typealias SelectedCallBack = (_ obj : Any) ->Void
 
 // MARK: -动画执行时间
 let kDuration : TimeInterval = 3.0
