@@ -19,17 +19,47 @@ class HABMarketViewController: UIViewController,HideNavigationBarProtocol {
 //        let nav = se
     }
 //    imageLabel
-    private let imageLabelView : UIView = {
+    private let imageLabelView : HABMainImageLabelView = {
         let view = HABMainImageLabelView()
-        view.callBackBlock { (obj) in
-            if obj is Int {
-                let vc = HABMarketViewController()
-                vc.clickAction(obj: obj)
-//                    .navigationController?.pushViewController(, animated: true)
-            }
-        }
+        
         return view
     } ()
+    
+    static func getCurrentVC()->UIViewController{
+        
+        var window = UIApplication.shared.keyWindow
+        if window?.windowLevel != UIWindow.Level.normal{
+            let windows = UIApplication.shared.windows
+            for  tempwin in windows{
+                if tempwin.windowLevel == UIWindow.Level.normal{
+                    window = tempwin
+                    break
+                }
+            }
+        }
+        let frontView = (window?.subviews)![0]
+        let nextResponder = frontView.next
+//         Getdevice.println("getCurrentVC    XX \(frontView.classForCoder)")// iOS8 9 window  ios7 UIView
+//        Getdevice.println("getCurrentVC    XX \((window?.subviews)!.count)")
+//        Getdevice.println("getCurrentVC    XX \(nextResponder?.classForCoder)")
+        if nextResponder?.isKind(of: UIViewController.classForCoder()) == true{
+
+            return nextResponder as! UIViewController
+        }else if nextResponder?.isKind(of: UINavigationController.classForCoder()) == true{
+
+            return (nextResponder as! UINavigationController).visibleViewController!
+        }
+        else {
+
+            if (window?.rootViewController) is UINavigationController{
+              return ((window?.rootViewController) as! UINavigationController).visibleViewController!//只有这个是显示的controller 是可以的必须有nav才行
+            }
+            
+           return (window?.rootViewController)!
+            
+        }
+
+    }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         if (HABUserManager.shared.userInfo?.token.isEmpty == true) {
@@ -40,6 +70,13 @@ class HABMarketViewController: UIViewController,HideNavigationBarProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         p_setUpUI()
+        let vc = HABHelpPamphletViewController()
+        vc.view.backgroundColor = UIColor.hexColor_FFFFFF()
+        
+        imageLabelView.callBackBlock {[weak self] (obj) in
+        
+            self?.navigationController?.pushViewController(vc, animated: false)
+        }
         view.backgroundColor = .hexColor_FFFFFF()
     }
     func p_setUpUI() {
@@ -63,8 +100,7 @@ class HABMarketViewController: UIViewController,HideNavigationBarProtocol {
         
     }
     func clickAction(obj: Any) {
-        let vc = HABHelpPamphletViewController()
-
+//        super.navigationController
     }
 
 }
