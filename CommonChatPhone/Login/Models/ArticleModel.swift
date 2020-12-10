@@ -10,7 +10,7 @@ import SwiftyJSON
 import RxSwift
 // 定义模型名称
 struct LoginData: Codable {
-    let data : HABUserInfo
+    let data : Login
     let code : Int
     let msg : String
 }

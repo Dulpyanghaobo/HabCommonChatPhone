@@ -14,10 +14,7 @@ class HABMarketViewController: UIViewController,HideNavigationBarProtocol {
         let habNAVVC = HABMainNavViewController()
         return habNAVVC
     } ()
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-//        let nav = se
-    }
+
 //    imageLabel
     private let imageLabelView : HABMainImageLabelView = {
         let view = HABMainImageLabelView()
@@ -39,9 +36,6 @@ class HABMarketViewController: UIViewController,HideNavigationBarProtocol {
         }
         let frontView = (window?.subviews)![0]
         let nextResponder = frontView.next
-//         Getdevice.println("getCurrentVC    XX \(frontView.classForCoder)")// iOS8 9 window  ios7 UIView
-//        Getdevice.println("getCurrentVC    XX \((window?.subviews)!.count)")
-//        Getdevice.println("getCurrentVC    XX \(nextResponder?.classForCoder)")
         if nextResponder?.isKind(of: UIViewController.classForCoder()) == true{
 
             return nextResponder as! UIViewController

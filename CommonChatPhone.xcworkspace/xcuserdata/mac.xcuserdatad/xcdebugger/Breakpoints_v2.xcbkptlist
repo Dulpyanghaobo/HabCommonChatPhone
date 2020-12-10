@@ -14,8 +14,8 @@
             filePath = "CommonChatPhone/Market/ViewControllers/HABMarketViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
             landmarkName = "clickAction(obj:)"
             landmarkType = "7">
          </BreakpointContent>

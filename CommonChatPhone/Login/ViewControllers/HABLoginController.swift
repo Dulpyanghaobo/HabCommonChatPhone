@@ -84,20 +84,21 @@ class HABLoginController: UIViewController,HideNavigationBarProtocol{
             return alertUserLoginError()
         }
         let authlogin = MultiTarget(LoginMoyaApi.auth(email, password))
-//        HttpRequestManager.rxRequest(authlogin,type: LoginData.self ).subscribe(onSuccess: {(list) in
-//        }) { (Error) in
-//            print(Error)
-//        }.disposed(by: rx.disposeBag)
-        HttpRequestManager.rxRequestResponse(authlogin).subscribe { (list) in
-//            print("\(list)")
-            let data = list["data"]
-            HABUserManager.shared.cacheUserInfo(data.dictionaryValue)
-            if (HABUserManager.shared.userInfo?.token.isEmpty == false) {
-                self.navigationController?.popViewController(animated: true)
-            }
-        } onError: { (Error) in
-            print("\(Error)")
+        HttpRequestManager.rxRequest(authlogin,type: LoginData.self ).subscribe(onSuccess: {(list) in
+            print("\(list)")
+        }) { (Error) in
+            print(Error)
         }.disposed(by: rx.disposeBag)
+//        HttpRequestManager.rxRequestResponse(authlogin).subscribe { (list) in
+////            print("\(list)")
+//            let data = list["data"]
+//            HABUserManager.shared.cacheUserInfo(data.dictionaryValue)
+//            if (HABUserManager.shared.userInfo?.token.isEmpty == false) {
+//                self.navigationController?.popViewController(animated: true)
+//            }
+//        } onError: { (Error) in
+//            print("\(Error)")
+//        }.disposed(by: rx.disposeBag)
 
 
     }
