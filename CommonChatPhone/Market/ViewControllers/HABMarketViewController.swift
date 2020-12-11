@@ -38,6 +38,7 @@ class HABMarketViewController: UIViewController,HideNavigationBarProtocol {
         let nextResponder = frontView.next
         if nextResponder?.isKind(of: UIViewController.classForCoder()) == true{
 
+            
             return nextResponder as! UIViewController
         }else if nextResponder?.isKind(of: UINavigationController.classForCoder()) == true{
 
