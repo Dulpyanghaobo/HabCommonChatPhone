@@ -64,13 +64,8 @@ class HABMarketViewController: UIViewController,HideNavigationBarProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         p_setUpUI()
-        let vc = HABHelpPamphletViewController()
-        vc.view.backgroundColor = UIColor.hexColor_FFFFFF()
-        
-        imageLabelView.callBackBlock {[weak self] (obj) in
-        
-            self?.navigationController?.pushViewController(vc, animated: false)
-        }
+        coreMainImageLabelAction()
+
         view.backgroundColor = .hexColor_FFFFFF()
     }
     func p_setUpUI() {
@@ -92,6 +87,15 @@ class HABMarketViewController: UIViewController,HideNavigationBarProtocol {
     }
     func p_setUpData() {
         
+    }
+    func coreMainImageLabelAction() {
+        let vc = HABHelpPamphletViewController()
+        vc.view.backgroundColor = UIColor.hexColor_FFFFFF()
+        
+        imageLabelView.callBackBlock {[weak self] (obj) in
+        
+            self?.navigationController?.pushViewController(vc, animated: false)
+        }
     }
     func clickAction(obj: Any) {
 //        super.navigationController
