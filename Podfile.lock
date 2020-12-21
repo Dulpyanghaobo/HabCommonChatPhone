@@ -24,6 +24,7 @@ PODS:
   - SSZipArchive (2.2.3)
   - SwiftTheme (0.5.4)
   - SwiftyJSON (5.0.0)
+  - SwiftyMarkdown (0.6.2)
 
 DEPENDENCIES:
   - Alamofire (~> 5.2)
@@ -42,6 +43,7 @@ DEPENDENCIES:
   - SSZipArchive
   - SwiftTheme
   - SwiftyJSON
+  - SwiftyMarkdown
 
 SPEC REPOS:
   https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
@@ -62,6 +64,7 @@ SPEC REPOS:
     - SSZipArchive
     - SwiftTheme
     - SwiftyJSON
+    - SwiftyMarkdown
 
 SPEC CHECKSUMS:
   Alamofire: 3b6a534a3df22db367e4dedeeca73d1ddfcf0e2f
@@ -81,7 +84,8 @@ SPEC CHECKSUMS:
   SSZipArchive: 62d4947b08730e4cda640473b0066d209ff033c9
   SwiftTheme: 900582982b8d33d6226314e080f74d0767683218
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  SwiftyMarkdown: 483eeba7f992035910fbb2e40cf1fc8c8249c6ac
 
-PODFILE CHECKSUM: 8ac6d65a6fe229c2449bcadf6100a84b1142d306
+PODFILE CHECKSUM: eee4483f573b6b7248c4554545f612333a355003
 
 COCOAPODS: 1.10.0

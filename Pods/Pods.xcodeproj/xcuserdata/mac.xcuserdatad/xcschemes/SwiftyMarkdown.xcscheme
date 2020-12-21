@@ -14,9 +14,9 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "767A40761DA8C4759D142B91ABC2E45E"
-               BuildableName = "Pods-CommonChatPhone-CommonChatPhoneUITests.framework"
-               BlueprintName = "Pods-CommonChatPhone-CommonChatPhoneUITests"
+               BlueprintIdentifier = "93523582DEC251A9E59F621510B882C3"
+               BuildableName = "SwiftyMarkdown.framework"
+               BlueprintName = "SwiftyMarkdown"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

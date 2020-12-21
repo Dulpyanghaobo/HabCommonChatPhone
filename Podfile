@@ -23,6 +23,7 @@ target 'CommonChatPhone' do
   pod 'HandyJSON'
   pod 'MBProgressHUD'
   pod 'NSObject+Rx'
+pod 'SwiftyMarkdown'
   target 'CommonChatPhoneTests' do
     inherit! :search_paths
   end
