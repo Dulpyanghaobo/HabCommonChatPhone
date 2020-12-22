@@ -89,16 +89,16 @@ class HABLoginController: UIViewController,HideNavigationBarProtocol{
         }) { (Error) in
             print(Error)
         }.disposed(by: rx.disposeBag)
-//        HttpRequestManager.rxRequestResponse(authlogin).subscribe { (list) in
-////            print("\(list)")
-//            let data = list["data"]
-//            HABUserManager.shared.cacheUserInfo(data.dictionaryValue)
-//            if (HABUserManager.shared.userInfo?.token.isEmpty == false) {
-//                self.navigationController?.popViewController(animated: true)
-//            }
-//        } onError: { (Error) in
-//            print("\(Error)")
-//        }.disposed(by: rx.disposeBag)
+        HttpRequestManager.rxRequestResponse(authlogin).subscribe { (list) in
+//            print("\(list)")
+            let data = list["data"]
+            HABUserManager.shared.cacheUserInfo(data.dictionaryValue)
+            if (HABUserManager.shared.userInfo?.token.isEmpty == false) {
+                self.navigationController?.popViewController(animated: true)
+            }
+        } onError: { (Error) in
+            print("\(Error)")
+        }.disposed(by: rx.disposeBag)
 
 
     }
