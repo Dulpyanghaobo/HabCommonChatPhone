@@ -68,6 +68,8 @@
 		DA7C056D2576B7E4009BFFFC /* HabMeetDetailTimeItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C056C2576B7E4009BFFFC /* HabMeetDetailTimeItems.swift */; };
 		DA801EF9257D445300393E83 /* HABNetworking+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA801EF8257D445300393E83 /* HABNetworking+Alamofire.swift */; };
 		DA801EFE257D47F300393E83 /* HABMeetDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA801EFD257D47F300393E83 /* HABMeetDetailViewModel.swift */; };
+		DA96E732262DD18800A85730 /* CCMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA96E731262DD18800A85730 /* CCMeViewController.swift */; };
+		DA96E737262DD24600A85730 /* CCAccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA96E736262DD24600A85730 /* CCAccountTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -160,6 +162,8 @@
 		DA7C056C2576B7E4009BFFFC /* HabMeetDetailTimeItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabMeetDetailTimeItems.swift; sourceTree = "<group>"; };
 		DA801EF8257D445300393E83 /* HABNetworking+Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HABNetworking+Alamofire.swift"; sourceTree = "<group>"; };
 		DA801EFD257D47F300393E83 /* HABMeetDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HABMeetDetailViewModel.swift; path = CommonChatPhone/HABMeetDetailViewModel.swift; sourceTree = SOURCE_ROOT; };
+		DA96E731262DD18800A85730 /* CCMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCMeViewController.swift; sourceTree = "<group>"; };
+		DA96E736262DD24600A85730 /* CCAccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCAccountTableViewCell.swift; sourceTree = "<group>"; };
 		EA07F1301B2D8ADCEBB6780E /* Pods-CommonChatPhoneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonChatPhoneTests.debug.xcconfig"; path = "Target Support Files/Pods-CommonChatPhoneTests/Pods-CommonChatPhoneTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F631D30BE26A46EA674ECE1C /* Pods_CommonChatPhone_CommonChatPhoneUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonChatPhone_CommonChatPhoneUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -840,6 +844,7 @@
 		DA7C04EE257678E8009BFFFC /* CommonChatPhone */ = {
 			isa = PBXGroup;
 			children = (
+				DA96E72B262DD15100A85730 /* Me */,
 				DA42D4852581271A00F4CDDC /* HelpPamphlet */,
 				DA42D47D2581226400F4CDDC /* AIInvest */,
 				043FE76F257F3251000B7C49 /* GoogleService-Info.plist */,
@@ -982,6 +987,55 @@
 				DA801EF8257D445300393E83 /* HABNetworking+Alamofire.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		DA96E72B262DD15100A85730 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				DA96E72C262DD16300A85730 /* Account */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		DA96E72C262DD16300A85730 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				DA96E730262DD17800A85730 /* ViewModel */,
+				DA96E72F262DD17400A85730 /* Model */,
+				DA96E72E262DD17000A85730 /* View */,
+				DA96E72D262DD16A00A85730 /* ViewController */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		DA96E72D262DD16A00A85730 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DA96E731262DD18800A85730 /* CCMeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DA96E72E262DD17000A85730 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA96E736262DD24600A85730 /* CCAccountTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DA96E72F262DD17400A85730 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DA96E730262DD17800A85730 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1249,12 +1303,14 @@
 				043FE89C257F618E000B7C49 /* NewHttpMultiTargetApi.swift in Sources */,
 				DA553EF2257E972700688065 /* HABMarketQuotesHabCoinViewController.swift in Sources */,
 				043FE80F257F45CB000B7C49 /* HttpApiConfig.swift in Sources */,
+				DA96E732262DD18800A85730 /* CCMeViewController.swift in Sources */,
 				04800FCD257A123C004CFD8D /* HABLoginRegsiterInputView.swift in Sources */,
 				DA801EF9257D445300393E83 /* HABNetworking+Alamofire.swift in Sources */,
 				DA7C053D25767D13009BFFFC /* HABMeetDetailView.swift in Sources */,
 				DA553E91257E88B000688065 /* HABBaseTabBarController.swift in Sources */,
 				DA553F16257E9C2B00688065 /* UIImage+Extension.swift in Sources */,
 				0424AC132577410000B769C9 /* HABMeetDetailMeetContentView.swift in Sources */,
+				DA96E737262DD24600A85730 /* CCAccountTableViewCell.swift in Sources */,
 				043FE70E257F1546000B7C49 /* HABUserInfo.swift in Sources */,
 				043FE79F257F376A000B7C49 /* HttpRequestManager.swift in Sources */,
 				DA553F07257E98F300688065 /* HABContractViewController.swift in Sources */,
@@ -1454,7 +1510,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WSJK7MN7ZH;
+				DEVELOPMENT_TEAM = 99LSSXFZX4;
 				INFOPLIST_FILE = CommonChatPhone/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1478,7 +1534,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WSJK7MN7ZH;
+				DEVELOPMENT_TEAM = 99LSSXFZX4;
 				INFOPLIST_FILE = CommonChatPhone/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
