@@ -117,5 +117,7 @@ extension UIColor {
     class func hexColor_0000CD() -> UIColor {
         return colorWithHexStr("0000CD")
     }
-    
+    class func hexColor_28A751() -> UIColor {
+        return colorWithHexStr("28A751")
+    }
 }

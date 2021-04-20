@@ -7,7 +7,7 @@
 
 import UIKit
 
-
+@available(iOS 13.0, *)
 //    MARK: -屏幕
 //全屏大小
 public let kScreen = UIScreen.main.bounds
@@ -59,7 +59,11 @@ public let cachesURL = FileManager.default.urls(for: .cachesDirectory, in: .user
 public let libraryURL = FileManager.default.urls(for: .libraryDirectory, in: .userDomainMask)[0]
 
 // MARK:- 当前窗口
-let kCurrentWindow = UIApplication.shared.keyWindow
+let kCurrentWindow = UIApplication.shared.windows[0]
+// 顶部的安全距离
+let topPadding = kCurrentWindow.safeAreaInsets.top
+// 底部的安全距离
+let bottomPadding = kCurrentWindow.safeAreaInsets.bottom
 
 // MARK:- 自定义打印日志
 func printLog<T>(_ message: T, fileName: String = #file, methodName: String = #function, lineNumber: Int = #line){

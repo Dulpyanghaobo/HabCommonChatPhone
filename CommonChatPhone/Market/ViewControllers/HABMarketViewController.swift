@@ -55,16 +55,15 @@ class HABMarketViewController: UIViewController,HideNavigationBarProtocol {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        if (HABUserManager.shared.userInfo?.token.isEmpty == true) {
-            let login = HABLoginController()
-            self.navigationController?.pushViewController(login, animated: true)
-        }
+//        if (HABUserManager.shared.userInfo?.token.isEmpty == true) {
+//            let login = HABLoginController()
+//            self.navigationController?.pushViewController(login, animated: true)
+//        }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         p_setUpUI()
-        let vc = HABHelpPamphletViewController()
-        vc.view.backgroundColor = UIColor.hexColor_FFFFFF()
+        let vc = CCAccountViewController()
         
         imageLabelView.callBackBlock {[weak self] (obj) in
         
