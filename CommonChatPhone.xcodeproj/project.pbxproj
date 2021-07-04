@@ -53,6 +53,10 @@
 		DA707690257EAB9C008932F6 /* Light.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA70768D257EAB9C008932F6 /* Light.plist */; };
 		DA707691257EAB9C008932F6 /* Night.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA70768E257EAB9C008932F6 /* Night.plist */; };
 		DA707692257EAB9C008932F6 /* AppThemes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70768F257EAB9C008932F6 /* AppThemes.swift */; };
+		DA73D0B926901A9F00643ED1 /* CCHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA73D0B826901A9F00643ED1 /* CCHomeViewController.swift */; };
+		DA73D0BB269025C500643ED1 /* CCHomeHeadCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA73D0BA269025C500643ED1 /* CCHomeHeadCollectionViewCell.swift */; };
+		DA73D0BD269026BC00643ED1 /* CCHomeHeadKcalPancelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA73D0BC269026BC00643ED1 /* CCHomeHeadKcalPancelView.swift */; };
+		DA73D0BF2690282800643ED1 /* CCHomeHeadTaskPancelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA73D0BE2690282800643ED1 /* CCHomeHeadTaskPancelView.swift */; };
 		DA7C04F0257678E8009BFFFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C04EF257678E8009BFFFC /* AppDelegate.swift */; };
 		DA7C04F2257678E8009BFFFC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C04F1257678E8009BFFFC /* SceneDelegate.swift */; };
 		DA7C04F7257678E8009BFFFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA7C04F5257678E8009BFFFC /* Main.storyboard */; };
@@ -141,6 +145,10 @@
 		DA70768E257EAB9C008932F6 /* Night.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Night.plist; sourceTree = "<group>"; };
 		DA70768F257EAB9C008932F6 /* AppThemes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppThemes.swift; sourceTree = "<group>"; };
 		DA7076A2257EAC77008932F6 /* CommonChatPhone-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CommonChatPhone-Bridging-Header.h"; sourceTree = "<group>"; };
+		DA73D0B826901A9F00643ED1 /* CCHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCHomeViewController.swift; sourceTree = "<group>"; };
+		DA73D0BA269025C500643ED1 /* CCHomeHeadCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCHomeHeadCollectionViewCell.swift; sourceTree = "<group>"; };
+		DA73D0BC269026BC00643ED1 /* CCHomeHeadKcalPancelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCHomeHeadKcalPancelView.swift; sourceTree = "<group>"; };
+		DA73D0BE2690282800643ED1 /* CCHomeHeadTaskPancelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCHomeHeadTaskPancelView.swift; sourceTree = "<group>"; };
 		DA7C04EC257678E8009BFFFC /* CommonChatPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommonChatPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA7C04EF257678E8009BFFFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA7C04F1257678E8009BFFFC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -820,6 +828,49 @@
 			path = Plist;
 			sourceTree = "<group>";
 		};
+		DA73D0B32690176400643ED1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DA73D0B726901A5000643ED1 /* Model */,
+				DA73D0B626901A4B00643ED1 /* Presenter */,
+				DA73D0B526901A4700643ED1 /* View */,
+				DA73D0B42690177400643ED1 /* ViewController */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DA73D0B42690177400643ED1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DA73D0B826901A9F00643ED1 /* CCHomeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DA73D0B526901A4700643ED1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA73D0BA269025C500643ED1 /* CCHomeHeadCollectionViewCell.swift */,
+				DA73D0BC269026BC00643ED1 /* CCHomeHeadKcalPancelView.swift */,
+				DA73D0BE2690282800643ED1 /* CCHomeHeadTaskPancelView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DA73D0B626901A4B00643ED1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		DA73D0B726901A5000643ED1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		DA7C04E3257678E8009BFFFC = {
 			isa = PBXGroup;
 			children = (
@@ -845,6 +896,7 @@
 		DA7C04EE257678E8009BFFFC /* CommonChatPhone */ = {
 			isa = PBXGroup;
 			children = (
+				DA73D0B32690176400643ED1 /* Home */,
 				DA42D4852581271A00F4CDDC /* HelpPamphlet */,
 				DA42D47D2581226400F4CDDC /* AIInvest */,
 				043FE76F257F3251000B7C49 /* GoogleService-Info.plist */,
@@ -1273,6 +1325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA73D0BB269025C500643ED1 /* CCHomeHeadCollectionViewCell.swift in Sources */,
 				043FE723257F1843000B7C49 /* HABUserManager.swift in Sources */,
 				DA553EA9257E8DF600688065 /* UIColor+Common.swift in Sources */,
 				DA553EC0257E941A00688065 /* BuyHabCoinViewController.swift in Sources */,
@@ -1284,6 +1337,7 @@
 				DA42D443258107DC00F4CDDC /* HABMainNavViewController.swift in Sources */,
 				043FE897257F5B1A000B7C49 /* NewHttpRequestLoginApi.swift in Sources */,
 				DA553E86257E85B500688065 /* HABMainDataController.swift in Sources */,
+				DA73D0B926901A9F00643ED1 /* CCHomeViewController.swift in Sources */,
 				043FE746257F1E0C000B7C49 /* String+Extension.swift in Sources */,
 				DA553EB8257E93D500688065 /* HABMyHaoBoViewController.swift in Sources */,
 				043FE849257F4C32000B7C49 /* HABConfiguredHUD.swift in Sources */,
@@ -1292,6 +1346,7 @@
 				DA7C05682576B583009BFFFC /* HabMeetDetailRowsHorizenCell.swift in Sources */,
 				04800FC3257A1173004CFD8D /* HABLoginController.swift in Sources */,
 				DA707692257EAB9C008932F6 /* AppThemes.swift in Sources */,
+				DA73D0BD269026BC00643ED1 /* CCHomeHeadKcalPancelView.swift in Sources */,
 				DA42D47425810CE500F4CDDC /* MainNavView.swift in Sources */,
 				043FE89C257F618E000B7C49 /* NewHttpMultiTargetApi.swift in Sources */,
 				DA553EF2257E972700688065 /* HABMarketQuotesHabCoinViewController.swift in Sources */,
@@ -1310,6 +1365,7 @@
 				DA7C056225769EBB009BFFFC /* HABMeetDetailHorizenSliderView.swift in Sources */,
 				DA7C04F0257678E8009BFFFC /* AppDelegate.swift in Sources */,
 				043FE88B257F4ECC000B7C49 /* UIFont+PingFang.swift in Sources */,
+				DA73D0BF2690282800643ED1 /* CCHomeHeadTaskPancelView.swift in Sources */,
 				DA553F32257E9F5C00688065 /* HABBaseNavigationController.swift in Sources */,
 				04800FC8257A1185004CFD8D /* HABRegisterViewController.swift in Sources */,
 				DA553ED9257E961000688065 /* HABTransactionHabCoinViewController.swift in Sources */,

@@ -12,7 +12,7 @@ class HABHelpPamphletViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.backgroundColor = .clear
-        self.navigationController?.title = "App使用说明"
+        self.navigationController?.title = "App使用说明ßß"
     }
 
 }
