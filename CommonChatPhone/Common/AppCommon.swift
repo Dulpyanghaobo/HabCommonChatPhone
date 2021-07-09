@@ -19,10 +19,10 @@ public let kScreenW = UIScreen.main.bounds.size.width
 public let kScreenH = UIScreen.main.bounds.size.height
 
 //导航栏高度
-public let statusBarHeight = UIApplication.shared.statusBarFrame.height
+public let statusBarHeight = UIApplication.shared.windows.first?.windowScene?.statusBarManager?.statusBarFrame.size.height
 
 //navigationBar高度
-public let navigationBarHeight = statusBarHeight + 44
+public let KNavigationBarHeight = statusBarHeight! + 44
 
 
 //全屏显示五个cell的cell宽

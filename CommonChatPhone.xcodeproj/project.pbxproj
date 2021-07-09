@@ -36,6 +36,12 @@
 		DA42D494258128B900F4CDDC /* HABMainImageLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA42D493258128B900F4CDDC /* HABMainImageLabelView.swift */; };
 		DA42D49A25812A4400F4CDDC /* HABCoreImageLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA42D49925812A4400F4CDDC /* HABCoreImageLabelCell.swift */; };
 		DA42D4A425812DBC00F4CDDC /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA42D4A325812DBC00F4CDDC /* UIButton+Extension.swift */; };
+		DA4DA6C62698A950001D94A7 /* NiblessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4DA6C52698A950001D94A7 /* NiblessView.swift */; };
+		DA4DA6C82698A95F001D94A7 /* NiblessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4DA6C72698A95F001D94A7 /* NiblessViewController.swift */; };
+		DA4DA6CA2698A973001D94A7 /* NiblessTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4DA6C92698A973001D94A7 /* NiblessTableViewCell.swift */; };
+		DA4DA6CF2698AA24001D94A7 /* CCGoalSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4DA6CE2698AA24001D94A7 /* CCGoalSettingViewController.swift */; };
+		DA4DA6D12698AA41001D94A7 /* CCGoalSettingNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4DA6D02698AA41001D94A7 /* CCGoalSettingNavView.swift */; };
+		DA4DA6D32698AB86001D94A7 /* CCGoalSettingFirstSchduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4DA6D22698AB86001D94A7 /* CCGoalSettingFirstSchduleView.swift */; };
 		DA553E86257E85B500688065 /* HABMainDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA553E85257E85B500688065 /* HABMainDataController.swift */; };
 		DA553E91257E88B000688065 /* HABBaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA553E90257E88B000688065 /* HABBaseTabBarController.swift */; };
 		DA553EA4257E8D1900688065 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA553EA3257E8D1900688065 /* UIColor+Extension.swift */; };
@@ -127,6 +133,12 @@
 		DA42D493258128B900F4CDDC /* HABMainImageLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABMainImageLabelView.swift; sourceTree = "<group>"; };
 		DA42D49925812A4400F4CDDC /* HABCoreImageLabelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABCoreImageLabelCell.swift; sourceTree = "<group>"; };
 		DA42D4A325812DBC00F4CDDC /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		DA4DA6C52698A950001D94A7 /* NiblessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessView.swift; sourceTree = "<group>"; };
+		DA4DA6C72698A95F001D94A7 /* NiblessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessViewController.swift; sourceTree = "<group>"; };
+		DA4DA6C92698A973001D94A7 /* NiblessTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessTableViewCell.swift; sourceTree = "<group>"; };
+		DA4DA6CE2698AA24001D94A7 /* CCGoalSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCGoalSettingViewController.swift; sourceTree = "<group>"; };
+		DA4DA6D02698AA41001D94A7 /* CCGoalSettingNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCGoalSettingNavView.swift; sourceTree = "<group>"; };
+		DA4DA6D22698AB86001D94A7 /* CCGoalSettingFirstSchduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCGoalSettingFirstSchduleView.swift; sourceTree = "<group>"; };
 		DA553E85257E85B500688065 /* HABMainDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABMainDataController.swift; sourceTree = "<group>"; };
 		DA553E90257E88B000688065 /* HABBaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABBaseTabBarController.swift; sourceTree = "<group>"; };
 		DA553EA3257E8D1900688065 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
@@ -459,6 +471,58 @@
 				DA42D4A325812DBC00F4CDDC /* UIButton+Extension.swift */,
 			);
 			path = Button;
+			sourceTree = "<group>";
+		};
+		DA4DA6BF2698A8DE001D94A7 /* GoalSetting */ = {
+			isa = PBXGroup;
+			children = (
+				DA4DA6C32698A8F9001D94A7 /* Models */,
+				DA4DA6C22698A8F5001D94A7 /* Views */,
+				DA4DA6C12698A8F1001D94A7 /* ViewModel */,
+				DA4DA6C02698A8EB001D94A7 /* ViewController */,
+			);
+			path = GoalSetting;
+			sourceTree = "<group>";
+		};
+		DA4DA6C02698A8EB001D94A7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DA4DA6CE2698AA24001D94A7 /* CCGoalSettingViewController.swift */,
+				DA4DA6D02698AA41001D94A7 /* CCGoalSettingNavView.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DA4DA6C12698A8F1001D94A7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DA4DA6C22698A8F5001D94A7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DA4DA6D22698AB86001D94A7 /* CCGoalSettingFirstSchduleView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DA4DA6C32698A8F9001D94A7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DA4DA6C42698A93D001D94A7 /* Nibless */ = {
+			isa = PBXGroup;
+			children = (
+				DA4DA6C52698A950001D94A7 /* NiblessView.swift */,
+				DA4DA6C72698A95F001D94A7 /* NiblessViewController.swift */,
+				DA4DA6C92698A973001D94A7 /* NiblessTableViewCell.swift */,
+			);
+			path = Nibless;
 			sourceTree = "<group>";
 		};
 		DA553E77257E802700688065 /* AppDelegate */ = {
@@ -896,6 +960,7 @@
 		DA7C04EE257678E8009BFFFC /* CommonChatPhone */ = {
 			isa = PBXGroup;
 			children = (
+				DA4DA6BF2698A8DE001D94A7 /* GoalSetting */,
 				DA73D0B32690176400643ED1 /* Home */,
 				DA42D4852581271A00F4CDDC /* HelpPamphlet */,
 				DA42D47D2581226400F4CDDC /* AIInvest */,
@@ -1029,6 +1094,7 @@
 		DA801EDE257D38D400393E83 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				DA4DA6C42698A93D001D94A7 /* Nibless */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -1327,6 +1393,7 @@
 			files = (
 				DA73D0BB269025C500643ED1 /* CCHomeHeadCollectionViewCell.swift in Sources */,
 				043FE723257F1843000B7C49 /* HABUserManager.swift in Sources */,
+				DA4DA6CA2698A973001D94A7 /* NiblessTableViewCell.swift in Sources */,
 				DA553EA9257E8DF600688065 /* UIColor+Common.swift in Sources */,
 				DA553EC0257E941A00688065 /* BuyHabCoinViewController.swift in Sources */,
 				04AE6199257A3B880085B1FA /* ArticleModel.swift in Sources */,
@@ -1340,10 +1407,12 @@
 				DA73D0B926901A9F00643ED1 /* CCHomeViewController.swift in Sources */,
 				043FE746257F1E0C000B7C49 /* String+Extension.swift in Sources */,
 				DA553EB8257E93D500688065 /* HABMyHaoBoViewController.swift in Sources */,
+				DA4DA6D12698AA41001D94A7 /* CCGoalSettingNavView.swift in Sources */,
 				043FE849257F4C32000B7C49 /* HABConfiguredHUD.swift in Sources */,
 				DA7C056D2576B7E4009BFFFC /* HabMeetDetailTimeItems.swift in Sources */,
 				DA42D494258128B900F4CDDC /* HABMainImageLabelView.swift in Sources */,
 				DA7C05682576B583009BFFFC /* HabMeetDetailRowsHorizenCell.swift in Sources */,
+				DA4DA6C82698A95F001D94A7 /* NiblessViewController.swift in Sources */,
 				04800FC3257A1173004CFD8D /* HABLoginController.swift in Sources */,
 				DA707692257EAB9C008932F6 /* AppThemes.swift in Sources */,
 				DA73D0BD269026BC00643ED1 /* CCHomeHeadKcalPancelView.swift in Sources */,
@@ -1366,18 +1435,21 @@
 				DA7C04F0257678E8009BFFFC /* AppDelegate.swift in Sources */,
 				043FE88B257F4ECC000B7C49 /* UIFont+PingFang.swift in Sources */,
 				DA73D0BF2690282800643ED1 /* CCHomeHeadTaskPancelView.swift in Sources */,
+				DA4DA6D32698AB86001D94A7 /* CCGoalSettingFirstSchduleView.swift in Sources */,
 				DA553F32257E9F5C00688065 /* HABBaseNavigationController.swift in Sources */,
 				04800FC8257A1185004CFD8D /* HABRegisterViewController.swift in Sources */,
 				DA553ED9257E961000688065 /* HABTransactionHabCoinViewController.swift in Sources */,
 				043FE819257F4853000B7C49 /* CustomEncoding.swift in Sources */,
 				DA7C04F2257678E8009BFFFC /* SceneDelegate.swift in Sources */,
 				DA42D47925811CBD00F4CDDC /* String+Frame.swift in Sources */,
+				DA4DA6C62698A950001D94A7 /* NiblessView.swift in Sources */,
 				DA42D4A425812DBC00F4CDDC /* UIButton+Extension.swift in Sources */,
 				DA553EE8257E965600688065 /* SellHabCoinViewController.swift in Sources */,
 				DA801EFE257D47F300393E83 /* HABMeetDetailViewModel.swift in Sources */,
 				DA42D48B258127BE00F4CDDC /* HABHelpPamphletViewController.swift in Sources */,
 				043FE814257F4701000B7C49 /* ErrorResponse.swift in Sources */,
 				DA42D49A25812A4400F4CDDC /* HABCoreImageLabelCell.swift in Sources */,
+				DA4DA6CF2698AA24001D94A7 /* CCGoalSettingViewController.swift in Sources */,
 				DA7C04FA257678E8009BFFFC /* CommonChatPhone.xcdatamodeld in Sources */,
 				DA553EA4257E8D1900688065 /* UIColor+Extension.swift in Sources */,
 			);

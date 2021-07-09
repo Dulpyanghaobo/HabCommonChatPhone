@@ -22,6 +22,8 @@ class HABMarketViewController: UIViewController,HideNavigationBarProtocol {
         return view
     } ()
     
+    
+    
     static func getCurrentVC()->UIViewController{
         
         var window = UIApplication.shared.keyWindow
@@ -55,10 +57,8 @@ class HABMarketViewController: UIViewController,HideNavigationBarProtocol {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-//        if (HABUserManager.shared.userInfo?.token.isEmpty == true) {
-//            let login = HABLoginController()
-//            self.navigationController?.pushViewController(login, animated: true)
-//        }
+        let goalSettingViewController = CCGoalSettingViewController()
+        navigationController?.pushViewController(goalSettingViewController, animated: false)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -78,7 +78,7 @@ class HABMarketViewController: UIViewController,HideNavigationBarProtocol {
     }
     func p_addMasonry() {
         mainNavViewController.view.snp.makeConstraints{(make) in
-            make.top.equalToSuperview().offset(statusBarHeight)
+            make.top.equalToSuperview().offset(statusBarHeight!)
             make.left.right.equalToSuperview().offset(0)
             make.height.equalTo(44)
         }

@@ -56,7 +56,7 @@ class HABLoginController: UIViewController,HideNavigationBarProtocol{
     }
     func add_masonry() {
         emailTextField!.snp.makeConstraints{(make) in
-            make.top.equalToSuperview().offset(statusBarHeight+60)
+            make.top.equalToSuperview().offset(statusBarHeight!+60)
             make.centerX.equalToSuperview().offset(0)
             make.left.equalToSuperview().offset(30)
             make.right.equalToSuperview().offset(-30)
